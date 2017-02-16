@@ -1,6 +1,6 @@
 # **C#**
 1.C# Basics
- - Comments
+ - Comments[link](https://github.com/shashikirankantheti/C-sharp/blob/master/Comments)
  - Print to screen
  - Variables
  - Operators
