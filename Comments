@@ -1,0 +1,89 @@
+// >---
+// >title: Comments in C# 
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Comments are used for writing description of code '
+// >    keywords: 'Comments in C#  '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_comments.md
+
+// >#Comments:
+
+// >Comments can be used to document what the program does and what specific blocks or lines of code do.
+// >since the c# compiler ignore comments, you can include them anywhere in a program without affecting your code.
+
+// >### Types of comments:
+// >  A comment is preceded by an double forward slash. The code of line
+// > after the double forward slash is simply ignored by the compiler.
+
+// >  The are the types of comments in C#:
+
+// >  1.Single line comments
+
+// >  2.Multi line comments
+  
+// >#### 1.Single line comments:
+// >  **' // '** for single line comments
+// >  To code a comment,type an double forward slash followed by the comment.
+// >  you can use this technique to add a comment on  its own line or to add a comment after the code on a line.
+
+// >#### 2. Multi line comments:
+// >  ** ``/*for multi line comments*/`` **
+// >  To code a multi line comment,type an single slash and * followed by the comment.
+// >  you can use this technique to add a comments of one or more lines.
+
+// >##### Examples on comments:
+ 
+// >**1.single line comments:**
+
+// >C# code:<br>
+// >A simple C# program to Display some text on Console.
+
+// >```
+// >using System;
+// >namespace Demos
+// > {
+// >	class Comments
+// >	{
+// >    	public static void Main()
+// >		{
+// >	    	Console.Write("Welcome to C# programming");
+// >			// shoes the welcome text on the screen 
+// >			Console.WriteLine(" I am  C# programmer");
+// >	    }
+// >	}
+// >}
+	
+// >```
+// >output:
+	
+// > >Welcome to C# programming I am C# programmer
+
+// >**2.Multi line comments:**
+    
+// >C# Code:<br>
+// >A simple C# program to Display some text on Console.
+
+// >```
+// >using system;
+// >namespace Demos
+// >{
+// >	class Comments
+// >	{
+// >		public static void Main()
+// >		{
+// >			Console.WriteLine("Welcome to C# programming.");
+// >			/*C# is a simple, modern, general-purpose,
+// >			object-oriented programming language 
+// >			developed by Microsoft within its
+// >			.NET initiative led by Anders Heisenberg.*/
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+	
+// > >Welcome to C# programming.		s
