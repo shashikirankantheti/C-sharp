@@ -1,0 +1,179 @@
+// >---
+// >title: Print to screen in C# 
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Print the output on the console or on screen'
+// >    keywords: 'Print to screen in C#  '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Print to screen.md
+
+// ># Print to screen:
+
+// > To print result or output to the screen we use different commands.
+// > To perform input/output streaming operations we use **'system'** name space.
+// > The System name space contains standard input, output, and error streams for console applications. This class cannot be inherited.
+
+// >## Methods to print on screen:
+
+// >**1.WriteLine("message"):**
+
+// >In command the alphabets W & L should be capital and ends with semicolon.
+// >This method is used to display any message on the command prompt.
+// >After displaying the message blinking cursor goes to the next line.
+
+// >Example:
+// ><br>
+// >C# Code:<br>
+// >A simple C# program to Display some text on Console.
+
+// >```
+// >using System;
+// >namespace Demos
+// >{
+// >	class WriteLineDemo
+// >	{
+// >		public static void Main()
+// >		{
+// >			Console.WriteLine("Hi,Welcome to C#");
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+// > >Hi,Welcome to C#
+// > > <br>
+// > >_  <br>   //Blinking cursor goes to the next line.
+
+// >**2.Write("Message");**
+
+// >In command the alphabet W should be capital and ends with semicolon.
+// >This method is used to display any message on command prompt,
+// >after displaying message blinking cursor remains in the same line.
+
+// >Example:
+// ><br>
+// >C# Code:<br>
+// >A simple C# program to Display some text on Console.
+
+// >```
+// >using System;
+// >namespace Demos
+// >{
+// >	class WriteDemo
+// >	{
+// >		public static void Main()
+// >		{
+// >			Console.Write("Hi,Welcome to C#");
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+// > >Hi,Welcome to C# _ <br>// Blinking cursor remains in the same line.
+
+// >####Console.WriteLine for different Parameters:
+
+// >#####C# program with different parameters.
+// >C# Code:<br>
+// >A simple C# program to Display different parameters on Console.
+
+// >``` 
+// >using System;
+// >namespace Demos
+// >{
+// >	class Program
+// >	{
+// >		public static void Main()
+// >		{	 
+// >			// print a integer value with Console.WriteLine.
+// >			int valueInt=4;
+// >			Console.WriteLine(valueInt);
+// >			Console.Write();//Empty Line.
+// >			
+// >			// print a String value. 
+// >			string valueString="your string";
+// >			//string values should be in between quotation marks
+// >			Console.WriteLine(valueString);
+// >			Console.WriteLine();
+// >				
+// >			//Print a bool value.
+// >			bool valueBool=false;
+// >			Console.WriteLine(valueBool);
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+// > >4
+
+// > >your String
+
+// > >false
+	 
+// > ##### c# program that uses Console.WriteLine with format strings.
+// > C# Code:<br>
+// > A simple C# program to Display different string format on Console.
+
+// >``` 	
+// >using System;
+// >namespace Demos
+// >{
+// >	class Program
+// >	{
+// >		public static void Main()
+// >		{
+// >			string value1="Dot";
+// >			string value2="Net";
+// >			string value3="Perls";
+// >			Console.WriteLine(" {0}, {1}, {2} ",value1,value2,value3);
+// >			/* printed in index values starts with 
+// >				0 to number of values*/
+// >				
+// >		}
+// >	}
+// >}
+// >```
+
+// >output:
+	
+// >>Dot,Net,Perls
+
+// >##### C# Program that uses Console.WriteLine with arrays.
+// >C# Code:<br>
+// >A simple C# program to Display array on Console.
+// >``` 
+// >using System;
+// >namespace Demos
+// >{
+// >	class Program
+// >	{
+// >		Public static void Main()
+// >		{
+// >
+// >			char[] array = new char[] { 'a','b','c','d' };
+// >			//
+// >			//writes entire char array on a new line.
+// >			//
+// >			Console.WriteLine(array);
+// >			//
+// >			//writes the middle 2 characters on a new line.
+// >			//
+// >			Console.WriteLine(array,1,2);
+// >			/*Array values stored with its index
+// >			values starts with 0 to number of elements.*/
+// >		}
+// >	}
+// >}
+// >```
+
+// >output:
+
+// > >abcd
+
+// > >bc
+
+	
+				
