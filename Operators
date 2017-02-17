@@ -1,0 +1,146 @@
+// >---
+// >title: Operators in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'operator is a symbol that tells the compiler to perform specific manipulations '
+// >    keywords: 'Operators in C#  '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_OPERATORS.md
+
+// >#OPERATORS:
+// >An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C# has rich set of built-in operators and provides the following type of operators:
+	
+// >- Arithmetic Operators
+// >- Relational Operators
+// >- Logical Operators
+// >- Bit-wise Operators
+// >- Assignment Operators
+// >- Miscellaneous Operators
+// >- Increment/Decrement operators
+
+
+// >###Arithmetic Operators:
+// >Arithmetic operators take numerical values (either literals or variables) as their operands and return a single numerical value. The standard arithmetic operators are addition (+), subtraction (-), multiplication (*), and division (/).<br>
+// >Assume variable A holds 10 and variable B holds 20 then:
+
+// >|OPERATOR|DESCRIPTION|EXAMPLE|
+// >|---------|-----------|-------|
+// >|+|Adds two operands|A + B = 30|
+// >|-|Subtracts second operand from the first|A - B = -10|
+// >|*|Multiplies both operands|A * B = 200|
+// >|/|Divides numerator by de-numerator|B / A = 2|
+// >|%|Modulus Operator and remainder of after an integer division|B % A = 0|
+// >|++|Increment operator increases integer value by one|A++ = 11|
+// >|--|Decrement operator decreases integer value by one|A-- = 9|
+
+// >###Relational Operators:
+// >In computer science, a relational operator is a programming language construct or operator that tests or defines some kind of relation between two entities.
+// > These include numerical equality (e.g., 5 = 5) and inequalities (e.g., 4 ≥ 3).
+// >Assume variable A holds 10 and variable B holds 20, then:
+
+
+// >|OPERATOR|DESCRIPTION|EXAMPLE|
+// >|--------|-----------|-------|
+// >|==|Checks if the values of two operands are equal or not, if yes then condition becomes true.|(A == B) is not true.|
+// >|!=|Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.|(A != B) is true.|
+// >|>|Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.|(A > B) is not true.|
+// >|<|Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.|(A < B) is true.|
+// >|>=|Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.|(A >= B) is not true.|
+// >|<=|Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.|(A <= B) is true.|
+
+// >###Logical Operators:
+// >Assume variable A holds Boolean value true and variable B holds Boolean value false, then:
+
+// >|OPERATOR|DESCRIPTION|EXAMPLE|
+// >|---------|----------|--------|
+// >|&&|Called Logical AND operator. If both the operands are non zero then condition becomes true.|(A && B) is false.|
+// >|```||```|Called Logical OR Operator. If any of the two operands is non zero then condition becomes true.|(A // B) is true.|
+// >|!|Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.|!(A && B) is true.|
+
+// >###Bit-wise Operators:
+// >Bit-wise operator works on bits and perform bit by bit operation. The truth tables for **&**(Binary AND ), **|**(Binary OR), **^**(Binary XOR)  and **`**(Negation) are as follows:
+
+// >|P|q|p & q|p / q|p ^ q|`P |`q|
+// >|--|--|---|----------|-----|--|--|
+// >|0|0|0|0|0|1|1|
+// >|0|1|0|1|1|1|0|
+// >|1|1|1|1|0|0|0|
+// >|1|0|0|1|1|0|1|
+
+
+// >###Assignment Operators:
+// >An assignment operator is the operator used to assign a new value to a variable, property, event or indexer element in C# programming language. Assignment operators can also be used for logical operations such as bit-wise logical operations or operations on integral operands and Boolean operands.
+
+// >Assignment operators supported by C#:
+
+// >|OPERATOR|DESCRIPTION|EXAMPLE|
+// >|---------|----------|--------|
+// >|=|Simple assignment operator, Assigns values from right side operands to left side operand|C = A + B assigns value of A + B into C|
+// >|+=|Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand|C += A is equivalent to C = C + A|
+// >|-=|Subtract AND assignment operator, It subtracts right operand from the left operand and assign the result to left operand|C -= A is equivalent to C = C - A|
+// >|*=|Multiply AND assignment operator, It multiplies right operand with the left operand and assign the result to left operand|C```*```= A is equivalent to C = C * A|
+// >|```|```= |Divide AND assignment operator, It divides left operand with the right operand and assign the result to left operand|C / = A is equivalent to C = C / A|
+// >|%=|Modulus AND assignment operator, It takes modulus using two operands and assign the result to left operand|C %= A is equivalent to C = C % A|
+// >|<<=|Left shift AND assignment operator|C <<= 2 is same as C = C << 2|
+// >|>>=|Right shift AND assignment operator|C >>= 2 is same as C = C >> 2|
+// >|&=|Bitwise AND assignment operator|C &= 2 is same as C = C & 2|
+// >|^=|bitwise exclusive OR and assignment operator|C ^= 2 is same as C = C ^ 2|
+// >|```|```=|bitwise inclusive OR and assignment operator|C /= 2 is same as C = C / 2|
+
+// >###Miscellaneous Operators:
+
+// >There are few other important operators including sizeof, typeof and ? : supported by C#.
+
+// >|OPERATOR|DESCRIPTION|EXAMPLE|
+// >|---------|----------|--------|
+// >|sizeof()|Returns the size of a data type.|sizeof(int), returns 4.|
+// >|typeof()|Returns the type of a class.|typeof(StreamReader);|
+// >|&|Returns the address of an variable.|&a; returns actual address of the variable.|
+// >|*|Pointer to a variable.|*a; creates pointer named 'a' to a variable.|
+// >|? :|Conditional Expression|If Condition is true ? Then value X : Otherwise value Y|
+// >|is|Determines whether an object is of a certain type.|If( Ford is Car) // checks if Ford is an object of the Car class.|
+// >|as|Cast without raising an exception if the cast fails.|Object obj = new StringReader("Hello");StringReader r = obj as StringReader;|
+
+
+// >###Increment/Decrement operators:
+
+// >1.prefix operator:<br>
+// >- prefix increment:<br>
+// >Assume a=10.<br>
+// >>int j=++a
+// >> <br>
+// >>j=11
+// >> <br>
+// >>a=11
+// >- prefix decrement:
+// ><br>
+// >Assume a=10.<br>
+// >>int k=--a;
+// >> <br>
+// >>k=9
+// >><br>
+// >>a=9
+
+
+// >2.Postfix operator:<br>
+// >- postfix increment:<br>
+// >Assume a=10.<br>
+// >>int j=a++
+// >> <br>
+// >j=10
+// >> <br>
+// >>a=11
+// >> <br>
+// >- Postfix decrement:<br>
+// >Assume a=10.<br>
+// >>int k=a--
+// >> <br>
+// >>k=10
+// >> <br>
+// >>a= 9
+// >> <br>
+
+
