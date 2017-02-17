@@ -1,0 +1,170 @@
+// >---
+// >title: Constants in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Constants refer to fixed values that the program may not alter during its  execution'
+// >    keywords: 'Constants in C# '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Constants.md
+
+// ># Constants
+
+// > The constants refer to fixed values that the program may not alter during its  execution.These fixed values are also called literals.Constants can be of any  of the basic data types like an integer constant,a floating constant,a 
+// > character constant, or a string literal. 
+// > There are also enumeration constants as well.
+
+// > The constants are treated just like regular variables except that their 
+// > values cannot be modified after their definition. 
+
+// >###Integer Literals:
+
+// > An integer literals can be a decimal,or hexadecimal constant.
+// > A prefix specifies the base for hexadecimal,and there is no prefix id for 
+// > decimal.
+// > An integer literal can also have a suffix that is a combination of U and L,  for unsigned and long, respectively. The suffix can be Upper-case or 
+// >lower-case and can be in any order.
+
+// >>85         /* decimal */
+// >> <br>
+// >>0x4b       /* hexadecimal */
+// >> <br>
+// >>30         /* int */
+// >> <br>
+// >>30u        /* unsigned int */
+// >> <br>
+// >>30l        /* long */
+// >> <br>
+// >>30ul       /* unsigned long */
+	  
+
+// >### Floating-Point Literals:
+
+// > A floating-point literal has an integer part, a decimal point, a fractional // # part, and an exponent part. You can represent floating point literals either // # in decimal form or exponential form.
+
+// >>3.14159  	   /* Legal */
+// >> <br>
+// >>314159E-5L    /* Legal */
+// >> <br>
+// >>510E          /* Illegal: incomplete exponent */
+// >> <br>
+// >>210f          /* Illegal: no decimal or exponent */
+// >> <br>
+// >>.e55          /* Illegal: missing integer or fraction */
+
+// > While representing in decimal form, you must include the decimal point, the  exponent, or both; and while representing using exponential form you must
+// > include the integer part, the fractional part, or both. The signed exponent  is introduced by e or E.
+
+// >###Character Constants:
+
+// > Character literals are enclosed in single quotes. For example, 'x' and can be  stored in a simple variable of char type. A character literal can be a plain  character (such as 'x'), an escape sequence (such as '\t'), or a universal
+// >character (such as '\u02C0').
+
+// > There are certain characters in C# when they are preceded by a backslash.
+// > They have special meaning and they are used to represent like newline (\n) or  tab (\t).
+
+// >  **List of some of such escape sequence codes:**
+
+// >|Escape sequence|Meaning|
+// >|----------------|------|
+// >| \\ | \ character|
+// >|\'|' character|
+// >|\"|" character|
+// >|\?|? character|
+// >|\a|Alert or bell|
+// >|\b|Backspace|
+// >|\f|Form feed|
+// >|\n|Newline|
+// >|\r|Carriage return|
+// >|\t|Horizontal tab|
+// >|\v|Vertical tab|
+// >|\xhh . . .	|Hexadecimal number of one or more digits|
+
+
+// > **Example to show few escape sequence characters:**
+ 
+// >C# code:
+// ><br>
+// >C# program to show escape sequence characters.
+// >```
+// >using System;
+// >namespace Demo 
+// >{
+// >	class Program
+// >	{
+// >		static void Main(string[] args)
+// >		{
+// >			Console.WriteLine("Hello\tWorld\n\n");
+// >			Console.ReadLine();
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+
+// >>Hello  World
+
+
+// >### String Literals:
+// >String literals or constants are enclosed in double quotes "  " or with @"  ".
+
+// >A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.
+
+
+// >You can break a long line into multiple lines using string literals and separating the parts using white spaces.
+
+
+
+// >**Examples of string literals:**
+		
+// >>"hello, dear"
+// >> <br>
+// >>"hello, \
+// >>dear"
+// >> <br>
+// >>"hello, " "d" "ear"
+// >> <br>
+// >>@"hello dear"
+
+// >###Defining Constants:
+
+// >Constants are defined using the **const** keyword.
+
+// > Syntax for defining a constant is:
+
+		const <data_type> <constant_name>= value;
+
+**Example demonstrates defining and using a constant:**
+
+C# Code:
+<br>
+C# program to  define and using a constant.
+```
+using System;
+namespace Demo
+{
+  class Program
+  {
+    public static void Main()
+    {
+       const double pi = 3.14159;   
+            
+       // constant declaration 
+       double r;
+       Console.Write("Enter Radius: ");
+       r = Convert.ToDouble(Console.ReadLine());
+       double areaCircle = pi * r * r;
+       Console.WriteLine("Radius: {0}, Area: {1}", r, areaCircle);
+       Console.ReadLine();
+    }
+  }
+}
+```
+**output:**
+
+>Enter Radius: 
+3
+> <br>
+>Radius: 3, Area: 28.27431
