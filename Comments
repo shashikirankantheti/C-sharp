@@ -19,11 +19,11 @@
 // >  A comment is preceded by an double forward slash. The code of line
 // > after the double forward slash is simply ignored by the compiler.
 
-// >  The are the types of comments in C#:
+// >  There are two types of comments in C#:
 
-// >  1.Single line comments
+// >  1.Single line comments.
 
-// >  2.Multi line comments
+// >  2.Multi line comments.
   
 // >#### 1.Single line comments:
 // >  **' // '** for single line comments
@@ -36,7 +36,7 @@
 // >  you can use this technique to add a comments of one or more lines.
 
 // >##### Examples on comments:
- 
+ 1
 // >**1.single line comments:**
 
 // >C# code:<br>
