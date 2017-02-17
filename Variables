@@ -1,0 +1,79 @@
+// >---
+// >title: Variables in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >   description: 'Variables is one type of field represents a numeric or string value or an object of a class.'
+// >    keywords: 'Variables in C#  '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Variables.md
+
+// ># Variables:
+
+// >  A variable represents a numeric or string value or an object of a class.
+// >  The value that the variable stores may change,but the name stays the same.
+// >  A variable is one type of field . In c# a variable is declared like this:
+// >```
+// ><data type> <name> 
+// >```
+
+// > The following code is a simple example of how to declare an integer variable,assign it a value,and then assign it a new value.
+ 
+// > C# Code:
+// > <br>
+// > C# program to declare an integer variable,assign it a value,and then assign it a new value.
+// > ```
+// >using System;
+// >namespace Demos
+// >{
+// >	class Example
+// >	{
+// >		public static void Main()
+// >		{
+// >			int x=1; //x holds the value 1
+// >			 x=2;  // now x holds the value 2
+// >			 Console.WriteLine( x);
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+	
+// > > 2
+
+// > In C#, variables are declared with a specific data type and a label.
+// > if your programming background is in loosely typed languages such as 
+// > JScript, you are used to using the same "var" type for all variables,
+// > but in C# you must specify whether your variable is an **int**, a **float**,
+// > a **byte**,a **short**, or any of the more than 20 different data types.
+// > The type specifies,among other things, the exact amount of memory that
+// > must be allocated to store the value when the application runs.
+// > The C# language enforces certain rules when converting a variable from 
+// > one type to another.
+
+
+// >**Example:**
+// >C# code<br>
+// >C# program  to print different data type value on selected order.
+// >```
+// >using System;
+// >namespace Demos
+// >{
+// >	class Example
+// >	{
+// >		public static void Main()
+// >		{
+// >		 int answer=42;
+// >		 string greeting="Hallo World:";
+// >		 double bignumber=1e100;
+// >		 Console.Write("{0} {1} {2}",answer,greeting,bignumber);
+// >		}
+// >	}
+// >}
+// >```
+// >output:
+
+// > >42 Hallo World 1e100
+
