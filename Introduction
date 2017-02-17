@@ -10,9 +10,13 @@
 // ># C#:
 
 // >1. C# .net is a object oriented programming language,it has the features of c,c++.Java,VB 6.0 and other features also.
-// >2. In C# the symbol '#' must be pronounced as sharp only . Because Microsoft has taken the symbol from musical note,Sharp note is more powerful note among all other musical motes.
-// >3. C# programs run on the .NET Framework, an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries.
-// >4. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.
+// >2. In C# the symbol '#' must be pronounced as sharp only . Because Microsoft has taken the symbol from musical note,
+// >Sharp note is more powerful note among all other musical motes.
+// >3. C# programs run on the .NET Framework, an integral component of Windows that includes a virtual execution system called 
+// >the common language runtime (CLR) and a unified set of class libraries.
+// >4. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI),
+// >an international standard that is the basis for creating execution and development environments in which languages 
+// >and libraries work together seamlessly.
 // >5. More about C# on [wikipedia](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
 
 
@@ -27,7 +31,8 @@
 // >3. Expand Installed, expand Templates, expand Visual C#, and then choose Console Application.
 // >4. In the Name box, specify a name for your project, and then choose the OK button.
 // >The new project appears in Solution Explorer.
-// >5. If Program.cs isn't open in the Code Editor, open the shortcut menu for Program.cs in Solution Explorer, and then choose View Code.
+// >5. If Program.cs isn't open in the Code Editor, open the shortcut menu for Program.cs in Solution Explorer, 
+// >and then choose View Code.
 
 // >[left]
 // >C# Code:<br>
