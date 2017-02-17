@@ -134,37 +134,37 @@
 
 // > Syntax for defining a constant is:
 
-		const <data_type> <constant_name>= value;
+// >	>const <data_type> <constant_name>= value;
 
-**Example demonstrates defining and using a constant:**
+// >**Example demonstrates defining and using a constant:**
 
-C# Code:
-<br>
-C# program to  define and using a constant.
-```
-using System;
-namespace Demo
-{
-  class Program
-  {
-    public static void Main()
-    {
-       const double pi = 3.14159;   
-            
-       // constant declaration 
-       double r;
-       Console.Write("Enter Radius: ");
-       r = Convert.ToDouble(Console.ReadLine());
-       double areaCircle = pi * r * r;
-       Console.WriteLine("Radius: {0}, Area: {1}", r, areaCircle);
-       Console.ReadLine();
-    }
-  }
-}
-```
-**output:**
+// >C# Code:
+// ><br>
+// >C# program to  define and using a constant.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >  class Program
+// >  {
+// >    public static void Main()
+// >    {
+// >       const double pi = 3.14159;   
+// >            
+// >       // constant declaration 
+// >       double r;
+// >       Console.Write("Enter Radius: ");
+// >       r = Convert.ToDouble(Console.ReadLine());
+// >       double areaCircle = pi * r * r;
+// >       Console.WriteLine("Radius: {0}, Area: {1}", r, areaCircle);
+// >       Console.ReadLine();
+// >    }
+// >  }
+// >}
+// >```
+// >**output:**
 
->Enter Radius: 
-3
-> <br>
->Radius: 3, Area: 28.27431
+// >>Enter Radius: 
+// >3
+// >> <br>
+// >>Radius: 3, Area: 28.27431
