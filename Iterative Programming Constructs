@@ -1,0 +1,296 @@
+// >---
+// >title: Iterative programming constructs in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'To execute set of operations again and again for specific number of times we use iterative programming constructs. '
+// >    keywords: 'programming constructs,Iterative programming constructs   '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Selection Programming Constructs  .md
+
+
+// >### Iterative Programming Constructs:
+
+// >To execute set of operations again and again for specific number of times we use iterative programming constructs.
+
+// >C# supports 4 types of iterative programming constructs they are:
+
+// >1. for loop
+// >2. while loop
+// >3. do  while loop
+// >4. foreach loop
+
+
+// >####1.for loop:
+
+// >A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.
+
+// >**Syntax**
+
+// > >for ( init; condition; increment )
+// > > <br>
+// > >{
+// > > <br>
+// > >statement(s);
+// > > <br>
+// > >}
+
+// > Flow of control in a 'for' loop :
+
+// >- The **init** step is executed first, and only once. This step allows you to declare and initialize any loop control variables. You are not required to put a statement here, as long as a semicolon appears.
+// >- Next, the **condition**is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and the flow of control jumps to the next statement just after the 'for' loop.
+// >- After the body of the 'for' loop executes, the flow of control jumps back up to the **increment** statement. This statement allows you to update any loop control variables. This statement can be left blank, as long as a semicolon appears after the condition.
+// >- The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then increment step, and then again condition). After the condition becomes false, the 'for' loop terminates.
+
+// >**Example:**<br>
+// >C# Code:
+// ><br>
+// >C# program to print multiplication table for given number.
+// >```
+// >using System;
+// >namespace demo
+// >{
+// >	class Program
+// >   	{
+// >      static void Main()
+// >      {
+// >        int n, i;
+// >        Console.Write("Enter a number:");
+// >        n = Convert.ToInt32(Console.ReadLine());
+// >        for (i = 1; i <= 10; i++)
+// >        {
+// >            Console.WriteLine(n + "*" + i + "=" + (n * i));
+// >        }
+// >        Console.ReadLine();
+// >	   }
+// >    }
+// >}
+// >```
+// >**Output:**
+		
+// > >Enter a number:125
+// > > <br>
+// > >125x1=125
+// > > <br>
+// > >125x2=250
+// > > <br>
+// > >125x3=375
+// > > <br>
+// > >125x4=500
+// > > <br>
+// > >125x5=625
+// > > <br>
+// >>125x6=750
+// > > <br>
+// > >125x7=875
+// > > <br>
+// > >125x8=1000
+// > > <br>
+// > >125x9=1125
+// > > <br>
+// > >125x10=1250
+
+
+// > ####2. While loop:
+
+// >A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+
+// >**syntax:**
+
+// > >Initialize variable
+// > > <br>
+// > >while(condition)
+// > > <br>
+// > >{
+// > > <br>
+// > >//code;
+// > > <br>
+// > >Increment // decrement;
+// > > <br>
+// > >}
+
+// > **Example:**<br>
+// > C# Code:
+// > <br>
+// > C# program to find reverse of a given number.
+// > ```
+// > using System;
+// > namespace demo
+// > {
+// >    class Program
+// >    {
+// >       static void Main()
+// >       {
+// >          Console.WriteLine("Enter the numbers:");
+// >          int n = Convert.ToInt32(Console.ReadLine());
+// >        
+// >          int revr = 0;
+// >          while (n>0)
+// >          {               
+// >             int rem = n % 10;
+// >             revr = (revr * 10) + rem;
+// >             n = n / 10;
+// >          }
+// >          Console.WriteLine("reverse of given number:" + revr);
+// >          Console.Read();
+// >       }
+// >    }
+// >}
+// >```
+// >**Output:**
+
+// > >Enter the number:12345
+// > > <br>
+// > >Reverse of given number:54321
+
+// > ####3. do  while loop:
+// >A do while loop is a control flow statement that executes a block of code at least once, and then repeatedly executes the block, or not, depending on a given Boolean condition at the end of the block.
+
+// >**syntax:**
+	
+// > >do {
+// > > <br>
+// > >statement(s);
+// > > <br>
+// > >} while( condition );
+
+// > The conditional expression appears at the end of the loop, so the statement(s) in the loop executes once before the condition is tested.
+
+// >If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop executes again. This process repeats until the given condition becomes false.
+
+// >**Example:**<br>
+// >C# Code:
+// ><br>
+// >C# program to read the numbers from the user until he enters a negative number.
+// >```
+// >using System;
+// >namespace demo
+// >{
+// >    class Program
+// >    {
+// >       public static void Main()
+// >       {
+// >          int n;
+// >          do
+// >          {
+// >             Console.Write("Enter the number:");
+// >             n = Convert.ToInt32(Console.ReadLine());
+// >          }
+// >          while (n > 0);
+// >          Console.Write("Enter positive number only.");
+// >          Console.Read();
+// >		}
+// >    }
+// >}
+// >```
+// >**Output:**
+
+// > >Enter the number:26
+// > > <br>
+// > >Enter the number:126
+// > > <br>
+// > >Enter the number:224
+// > > <br>
+// > >Enter the number:-124
+// > > <br>
+// > >Enter positive number only.
+	
+
+// >####4.For-each loop:
+
+
+// >In foreach loop the data type of loop variable must and should be same as a data type of an array or collection that we refer.
+
+// >At the time of execution foreach loop goes to that array,counts the number of elements in the array and repeats the loop that many times automatically.
+
+// >In each iteration location value will be copied in to loop variable.
+
+// >At any point within the foreach block, you can break out of the loop by using the break keyword, or step to the next iteration in the loop by using the continue keyword.
+
+// > foreach loop can also be exited by the goto, return, or throw statements.
+
+// >**Syntax:**
+// > > foreach(Datatype  variable_name  in  Array/Collection)
+// > > <br>
+// > > {
+// > > <br>
+// > > 		//code
+// > > <br>
+// > > }
+
+// > **Example:**<br>
+// >C# Code:
+// ><br>
+// >C# program to read elements into array and display them on screen and also display there positions,Number of elements on screen.
+// >```	
+// >using System;
+// >namespace Demo
+// >{
+// >	class Program
+// >	{
+// >		static void Main(string[] args)
+// >		{
+// >			int i;
+// >			int[] a = new int[4];
+// >			Console.WriteLine("Enter elements in to A array:");
+// >			for (i = 0; i < 4; i++)
+// >			{
+// >				a[i] = int.Parse(Console.ReadLine());
+// >			}
+// >			Console.WriteLine("Elements in the array:");
+// >			foreach (int b in a)
+// >			{
+// >				Console.WriteLine(b);
+// >			}
+// >			int count = 0;
+// >			foreach (int b in a)
+// >			{
+// >				count += 1;
+// >				Console.WriteLine("Element in *{0} is {1}", count,b);
+// >			}
+// >			Console.WriteLine("Number of elements in the 
+// >			array:{0}", count);
+// >         	Console.ReadLine();
+// >		}
+// >	}
+// >}
+// >```
+// > **Output:**
+
+// > > Enter elements in to A array:
+// > > <br>
+// > > 25
+// > > <br>
+// > > 26
+// > > <br>
+// > > 24
+// > > <br>
+// > > 56
+// > > <br>
+// > > Elements in the array:
+// > > <br>
+// > > 25
+// > > <br>
+// > > 26
+// > > <br>
+// > > 24
+// > > <br>
+// > > 56
+// > > <br>
+// > > Elements in ``*1`` is 25
+// > > <br>
+// > > Elements in ``*2`` is 26
+// > > <br>
+// > > Elements in ``*3`` is 24
+// > > <br>
+// > > Elements in ``*4`` is 56
+// > > <br>
+// > >Number of elements in the array:4
+
+
+
+
+
+ 
