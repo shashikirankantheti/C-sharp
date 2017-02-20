@@ -1,0 +1,95 @@
+// >---
+// >title: DataTypes  in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'A data type or simply type is a classification of data which tells the compiler or 
+// >                    interpreter how the programmer intends to use the data '
+// >    keywords: 'DataTypes in C# '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_DataTypes .md
+
+
+
+// ># DataTypes:
+
+// >####Basic Data Types:
+
+// >Most of the data types in C# are taken from C and C++.
+
+
+// >|Data Types|Description|Example|Range|Default Value|
+// >|----------|-----------|--------|-----|-------------|
+// >|object|The base type of all types|object obj=null;|-|-|
+// >|String|String type-sequence of Unicode characters|string str="Shashi";|-|-|
+// >|sbyte|8-bit signed integer type|sbyte val=12;|-128 to 127|0|
+// >|short|16-bit signed integral type|short val=12;|-32,768 to 32,767|0|
+// >|int|32-bit signed integral type|int val=12;|-2,147,483,648 to 2,147,483,647|0|
+// >|long|64-bit signed integral type|long val1=12;   long val2=34L;|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|0L|
+// >|bool|Boolean type; a bool value is either true or false|bool val1=true;  bool val2=false;|True or False|False|
+// >|Char|Character type; a char value is a Unicode character |char val='h';|U +0000 to U +ffff|'\0'|
+// >|byte|8-bit unsigned integral type| byte val1=12; byte val2=34U; |0 to 255|0
+// >|ushort|16-bit unsigned integral type|ushort val1=12; ushort val2=34U;|0 to 65,535|0|
+// >|uint|32-bit unsigned integral type|uint val1=12; uint val2=34u;|0 to 4,294,967,295|0|
+// >|ulong|64-bit unsigned integral type|ulong val1=12; ulong val2=34U; ulong val3=56L; ulong val4=78UL;|0 to 18,446,744,073,709,551,615|0|
+// >|float|single-precision floating point type|float val=1.23F;|-3.4 x 1038 to + 3.4 x 1038|0.0F|
+// >|double|Double-precision floating point type|double val=1.23; double val2=4.56D;|(+/-)5.0 x 10-324 to (+/-)1.7 x 10308|0.0D|
+// >|decimal|precise decimal type with 28 significant digits|decimal val=1.23M:|(-7.9 x 1028 to 7.9 x 1028) / 100 to 28|0.0M|
+
+
+
+// >#### Types in C#:
+// >C# supports two kind of types **value type** and **Reference type**
+
+
+// >|Types|Description|
+// >|------|-----------|
+// >|Value type|Includes simple data types such as int,char,bool,enums.|
+// >|Reference type|Includes object ,class,interface,delegate,and array types. |
+
+
+
+// >##### Value Type :
+// > Value type objects direct contain the actual data in a variable.
+// > With value types, the variable each have their own copy of the data ,and it is not possible for operations on one to affect the other. <br> 
+// >Value type variables can be assigned a value directly. They are derived from the class System.ValueType.<br>
+// >The value types directly contain data. Some examples are int, char, and float, which stores numbers, alphabets, and floating point numbers, respectively. <br>
+// >When you declare an int type, the system allocates memory to store the value.
+
+
+
+// > >int i=10;
+
+// >##### Reference Type:
+
+// > Reference type variables stores the reference of the actual data.
+// > with reference types,it is possible for two variables to reference the same object,
+// > and thus possible for operations on one variable to affect the object referenced by the other variable.
+
+// > >MyClass cls1=new MyClass(); 
+
+// >#### Data Types Conversions:
+
+// >C# supports two types of conversions. Implicit conversions and Explicit conversions.
+
+// > **Implicit conversions are direct conversions.**
+
+// >**For example:**
+
+// > >int Ival=34;
+// > > <br>
+// > >long Ival=int value;
+
+// >**Explicit conversion includes type casting conversion.**
+
+// >**For example:**
+
+// > >long Ival=123456;
+// > > <br>
+// > >int Ival= (int) Ival;
+
+
+
+
