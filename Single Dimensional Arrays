@@ -50,31 +50,31 @@
 // >C# Code:<br>
 // >C# program to read size of array and elements into array and display it to console.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	class Program
-// >	{
-// >		public static void Main(string[] args)
-// >		{
-// >			int i, s;
-// >			Console.WriteLine("Enter size of array:");
-// >			s = Convert.ToInt32(Console.ReadLine());
-// >			int[] A = new int[s];
-// >			Console.WriteLine("Enter elements into array:");
-// >			for (i = 0; i < s; i++)
-// >			{
-// >				A[i] = Convert.ToInt32(Console.ReadLine());
-// >			}
-// >			Console.WriteLine("Elements in array are:");
-// >			for (i = 0; i < s; i++)
-// >			{
-// >				Console.WriteLine(A[i]);
-// >			}
-// >			Console.ReadLine();
-// >		}
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int i, s;
+			Console.WriteLine("Enter size of array:");
+			s = Convert.ToInt32(Console.ReadLine());
+			int[] A = new int[s];
+			Console.WriteLine("Enter elements into array:");
+			for (i = 0; i < s; i++)
+			{
+				A[i] = Convert.ToInt32(Console.ReadLine());
+			}
+			Console.WriteLine("Elements in array are:");
+			for (i = 0; i < s; i++)
+			{
+				Console.WriteLine(A[i]);
+			}
+			Console.ReadLine();
+		}
+	}
+}
 // >```
 // >**Output:**
 // > > <br>
@@ -114,31 +114,31 @@
 // >C# Code:<br>
 // >C# program to read size of array and elements into array and display it to console using foreach loop.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	class Program
-// >	{
-// >		public static void Main(string[] args)
-// >		{
-// >			int i, s;
-// >			Console.Write("Enter size of array:");
-// >			s = Convert.ToInt32(Console.ReadLine());
-// >			int[] A = new int[s];
-// >			for (i = 0; i < s; i++)
-// >			{
-// >				Console.Write("Enter array element at *{0}:", i);
-// >				A[i] = Convert.ToInt32(Console.ReadLine());
-// >			}
-// >			Console.WriteLine("Elements in array are:");
-// >			foreach(int x in A)
-// >			{
-// >				Console.WriteLine(x);
-// >			}
-// >			Console.ReadLine();
-// >		}
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int i, s;
+			Console.Write("Enter size of array:");
+			s = Convert.ToInt32(Console.ReadLine());
+			int[] A = new int[s];
+			for (i = 0; i < s; i++)
+			{
+				Console.Write("Enter array element at *{0}:", i);
+				A[i] = Convert.ToInt32(Console.ReadLine());
+			}
+			Console.WriteLine("Elements in array are:");
+			foreach(int x in A)
+			{
+				Console.WriteLine(x);
+			}
+			Console.ReadLine();
+		}
+	}
+}
 // >```
 // >**Output:**<br>
 // > >Enter size of array:<br>
