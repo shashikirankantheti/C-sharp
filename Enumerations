@@ -37,23 +37,23 @@
 
 // >C# program to demonstrate simple enumeration.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >    class Enum
-// >    {
-// >        enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
-// >
-// >        static void Main(string[ ] args)
-// >        {
-// >            int WeekdayStart = (int)Days.Mon;
-// >            int WeekdayEnd = (int)Days.Sat;
-// >            Console.WriteLine("Monday: {0}", WeekdayStart);
-// >            Console.WriteLine("Saturday: {0}", WeekdayEnd);
-// >            Console.ReadLine();
-// >        }
-// >    }
-// >}
+using System;
+namespace Demo
+{
+    class Enum
+    {
+        enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
+
+        static void Main(string[ ] args)
+        {
+            int WeekdayStart = (int)Days.Mon;
+            int WeekdayEnd = (int)Days.Sat;
+            Console.WriteLine("Monday: {0}", WeekdayStart);
+            Console.WriteLine("Saturday: {0}", WeekdayEnd);
+            Console.ReadLine();
+        }
+    }
+}
 // >```
 // >**Output:** <br>
 // > // >>Monday:1 <br>
@@ -71,26 +71,26 @@
 // >C# Code:
 
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >    class Enum
-// >    {
-// >        enum Days
-// >        {
-// >            Sunday = 1,
-// >            TuesDay = 2,
-// >            Wednesday = 3
-// >        }
-// >     
-// >        static void Main(string[] args)
-// >        {
-// >            Days day = (Days)3;
-// >            Console.WriteLine("day: {0}", day);
-// >            Console.ReadLine();
-// >        }
-// >    }
-// >}
+using System;
+namespace Demo
+{
+    class Enum
+    {
+        enum Days
+        {
+            Sunday = 1,
+            TuesDay = 2,
+            Wednesday = 3
+        }
+     
+        static void Main(string[] args)
+        {
+            Days day = (Days)3;
+            Console.WriteLine("day: {0}", day);
+            Console.ReadLine();
+        }
+    }
+}
 // >```
 // >**Output:** <br>
 // > > day: Wednesday
