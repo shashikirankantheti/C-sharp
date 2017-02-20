@@ -30,17 +30,17 @@
 // >A simple C# program to Display some text on Console.
 
 // >```
-// >using System;
-// >namespace Demos
-// >{
-// >	class WriteLineDemo
-// >	{
-// >		public static void Main()
-// >		{
-// >			Console.WriteLine("Hi,Welcome to C#");
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class WriteLineDemo
+	{
+		public static void Main()
+		{
+			Console.WriteLine("Hi,Welcome to C#");
+		}
+	}
+}
 // >```
 // >output:
 // > >Hi,Welcome to C#
@@ -59,17 +59,17 @@
 // >A simple C# program to Display some text on Console.
 
 // >```
-// >using System;
-// >namespace Demos
-// >{
-// >	class WriteDemo
-// >	{
-// >		public static void Main()
-// >		{
-// >			Console.Write("Hi,Welcome to C#");
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class WriteDemo
+	{
+		public static void Main()
+		{
+			Console.Write("Hi,Welcome to C#");
+		}
+	}
+}
 // >```
 // >output:
 // > >Hi,Welcome to C# _ <br>// Blinking cursor remains in the same line.
@@ -81,30 +81,30 @@
 // >A simple C# program to Display different parameters on Console.
 
 // >``` 
-// >using System;
-// >namespace Demos
-// >{
-// >	class Program
-// >	{
-// >		public static void Main()
-// >		{	 
-// >			// print a integer value with Console.WriteLine.
-// >			int valueInt=4;
-// >			Console.WriteLine(valueInt);
-// >			Console.Write();//Empty Line.
-// >			
-// >			// print a String value. 
-// >			string valueString="your string";
-// >			//string values should be in between quotation marks
-// >			Console.WriteLine(valueString);
-// >			Console.WriteLine();
-// >				
-// >			//Print a bool value.
-// >			bool valueBool=false;
-// >			Console.WriteLine(valueBool);
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class Program
+	{
+		public static void Main()
+		{	 
+			// print a integer value with Console.WriteLine.
+			int valueInt=4;
+			Console.WriteLine(valueInt);
+			Console.Write();//Empty Line.
+			
+			// print a String value. 
+			string valueString="your string";
+			//string values should be in between quotation marks
+			Console.WriteLine(valueString);
+			Console.WriteLine();
+				
+			//Print a bool value.
+			bool valueBool=false;
+			Console.WriteLine(valueBool);
+		}
+	}
+}
 // >```
 // >output:
 // > >4
@@ -118,23 +118,23 @@
 // > A simple C# program to Display different string format on Console.
 
 // >``` 	
-// >using System;
-// >namespace Demos
-// >{
-// >	class Program
-// >	{
-// >		public static void Main()
-// >		{
-// >			string value1="Dot";
-// >			string value2="Net";
-// >			string value3="Perls";
-// >			Console.WriteLine(" {0}, {1}, {2} ",value1,value2,value3);
-// >			/* printed in index values starts with 
-// >				0 to number of values*/
-// >				
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class Program
+	{
+		public static void Main()
+		{
+			string value1="Dot";
+			string value2="Net";
+			string value3="Perls";
+			Console.WriteLine(" {0}, {1}, {2} ",value1,value2,value3);
+			/* printed in index values starts with 
+				0 to number of values*/
+				
+		}
+	}
+}
 // >```
 
 // >output:
@@ -145,28 +145,28 @@
 // >C# Code:<br>
 // >A simple C# program to Display array on Console.
 // >``` 
-// >using System;
-// >namespace Demos
-// >{
-// >	class Program
-// >	{
-// >		Public static void Main()
-// >		{
-// >
-// >			char[] array = new char[] { 'a','b','c','d' };
-// >			//
-// >			//writes entire char array on a new line.
-// >			//
-// >			Console.WriteLine(array);
-// >			//
-// >			//writes the middle 2 characters on a new line.
-// >			//
-// >			Console.WriteLine(array,1,2);
-// >			/*Array values stored with its index
-// >			values starts with 0 to number of elements.*/
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class Program
+	{
+		Public static void Main()
+		{
+
+			char[] array = new char[] { 'a','b','c','d' };
+			//
+			//writes entire char array on a new line.
+			//
+			Console.WriteLine(array);
+			//
+			//writes the middle 2 characters on a new line.
+			//
+			Console.WriteLine(array,1,2);
+			/*Array values stored with its index
+			values starts with 0 to number of elements.*/
+		}
+	}
+}
 // >```
 
 // > output:
