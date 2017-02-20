@@ -26,7 +26,7 @@
  - [Enumerations](https://github.com/shashikirankantheti/C-sharp/blob/master/Enumerations)<br>
  - [Parameters](https://github.com/shashikirankantheti/C-sharp/blob/master/parameters)<br>
    -- [Pass by Value](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20value%20Parameter)<br>
-   -- Pass by reference<br>
+   -- [Pass by reference](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20reference%20parameter)<br>
    -- Pass by out<br>
    -- Pass by param<br>
  - Object Oriented Programming<br>
