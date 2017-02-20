@@ -16,7 +16,7 @@
        --- [Single dimensional array](https://github.com/shashikirankantheti/C-sharp/blob/master/Single%20Dimensional%20Arrays)<br>
        --- [Multi dimensional array](https://github.com/shashikirankantheti/C-sharp/blob/master/Multi-dimensional%20Arrays)<br>
    -- [Arrays according to memory size](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays%20According%20to%20memory%20Size)<br>
-   -- Arrays according to Nature of Physical size<br>
+   -- [Arrays according to Nature of Physical size](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays%20According%20to%20Nature%20of%20physical%20%20Size)<br>
    -- Jagged arrau<br>
    -- Array Classv<br>
  - Boxing and Un-Boxing<br>
