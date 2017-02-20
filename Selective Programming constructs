@@ -1,0 +1,418 @@
+// >---
+// >title: Selection Programming Constructs in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'selection programming constructs is if condition is true then set of statements will be executed otherwise ignores by CLR. '
+// >    keywords: 'programming constructs,Selection Programming Constructs   '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Selection Programming Constructs  .md
+
+
+
+// >###Selection Programming Constructs: 
+
+// >In this method we will mention a condition,if condition is true then set of statements will be executed otherwise ignores by CLR.
+
+// >selection programming construct is categorized into following types:
+
+// >1. simple if
+// >2. if....else
+// >3. ladder if....else
+// >4. nested if
+// >5. switch case
+
+// >####1.Simple if:
+// >The if statement evaluates the test expression inside parenthesis.
+
+// >If test expression is evaluated to true (nonzero), statements inside the body of if is executed.
+
+// >If test expression is evaluated to false (0), statements inside the body of if is skipped.
+
+// >**syntax**
+
+// >>if (testExpression) 
+// >> <br>
+// >>{
+// >> <br>
+// >>	// statements
+// >> <br>
+// >>}
+
+// >**Example:**<br>
+// >C# Code:<br>
+// >Program for bookshop,read book id,book name,book cost price from user.Provide 20% of discount for cost price >500,find discount amount and selling price.
+// >```		
+// >using System;
+// >namespace BookShop
+// >{
+// >   	class CostCal
+// >   	 {
+// >        public static void Main(string[] args)
+// >        {
+// >           int bookid, bookcost;
+// >           string bookname;
+// >           Console.Write("enter book id:");
+// >           bookid = Convert.ToInt32(Console.ReadLine());
+// >
+// >           Console.Write("enter book name:");
+// >           bookname = Console.ReadLine();
+// >			//we don't have to convert ReadLine takes
+// >			input in string format.
+// >
+// >            Console.Write("enter book cost:");
+// >            bookcost =Convert.ToInt32(Console.ReadLine());
+// >
+// >            Console.WriteLine("-----------------------------------");
+// >            Console.WriteLine("book id :" + bookid);
+// >            Console.WriteLine("book name :" + bookname);
+// >            Console.WriteLine("book cost :" + bookcost);
+// >            if (bookcost > 500)
+// >            {
+// >                double discountamount = 20;
+// >
+// >                double discountamount1 = bookcost * discountamount * 0.01;
+// >                double sellingprice = bookcost - discountamount1;
+// >                                          
+// >                Console.WriteLine("Discount amount:" + discountamount1);
+// >                Console.WriteLine("selling price :" + sellingprice);
+// >            }
+// >            
+// >            Console.ReadLine();
+// >        }
+// >    }
+// >}
+// >```
+// >**Output:**
+
+// > >enter book id:1256
+// > > <br>
+// > >enter book name:C#
+// > > <br>
+// > >enter book cost:650
+// > > <br>
+// > >book id :1256	
+// > > <br>-----------------------
+// > > <br>
+// > >book name:C#
+// > > <br>
+// > >book cost:650
+// > > <br>
+// > >Discount amount:130
+// > > <br>
+// > >selling price :520
+
+
+
+// > ####2. if....else :
+// > If the condition is true then the control goes to the body of if block , that is the program will execute the code inside if block.
+
+// > If the condition is false then the control goes to next level , that is if you provide else block the program will execute the code block of else statement, otherwise the control goes to next line of code.
+
+// > **syntax of if....else**
+
+// > >if (condition)
+// > > <br>
+// > >{
+// > > <br>
+// > >statement;
+// > > <br>
+// > >}
+// > > <br>
+// > > 	else
+// > > <br>
+// > >{
+// > > <br>
+// > >statement;
+// > > <br>
+// > >}
+
+
+// > **Example:**<br>
+// > C# Code:<br>
+// >C# program to read a number from user and find out it is a positive number or negative number.
+// >```
+// >using System;
+// >namespace demos
+// >{
+// >	class Program
+// >	{
+// >        public static void Main()
+// >        {
+// >            Console.Write("Enter the number:");
+// >
+// >            int a=int.Parse(Console.ReadLine());
+// >
+// >            if(a>0)
+// >            {
+// >               Console.WriteLine("Given number is positive.");
+// >            }
+// >
+// >            else
+// >            {
+// >               Console.WriteLine("Given number is negative.");
+// >            }
+// >
+// >            Console.ReadLine();   // To stay on the command promt
+// >        }        
+// >    }
+// >}
+// >```
+
+// >**output:**
+		
+// > >Enter the number:15
+// > > <br>
+// > >Given number is positive.
+
+// > ####3.Ladder if...else:
+
+// >If you want to check more than one conditions at the same time , you can use ladder if statement .
+
+// > >if (condition1)
+// > > <br>
+// > >{
+// > > <br>
+// > >statement1;
+// > > <br>
+// > >}
+// > > <br>
+// > >else 
+// > > <br>
+// > >{
+// > > <br>
+// > >if (condition2)
+// > > <br>
+// > >{
+// > > <br>
+// > >statement2;
+// > > <br>
+// > >}
+// > > <br>
+// > >else
+// > > <br>
+// > >{
+// > > <br>
+// > >statement3;
+// > > <br>
+// > >}
+// > > <br>
+// > >}
+
+// > The conditional expressions are evaluated from the top downward. As soon as a true condition is found, the statement associated with it is executed, and the rest of the ladder is bypassed.
+
+// > If non of the conditions is true, then the final else statement will be executed. The final else often acts as a default condition; that is, if all other conditions tests fail, then the last else statement is performed. If there is no final else and all other conditions are false then no action will take place.
+
+// > **Example:**<br>
+// > C# Code:<br>
+// > C# program to read 1 to 6 integers and print selected integer name on screen.
+// > ```
+// > using System;
+// > namespace demo	
+// > {
+// > 	class Program
+// >   	{
+// >       	public static void Main(string[] args)
+// >       	{
+// >           	int x;
+// >      		Console.Write("Enter an integer between 1 and 6:");
+// >       		x=Convert.ToInt32( Console.ReadLine());
+// >           	if (x == 1) Console.WriteLine("The number is one ");
+// >           	else if (x == 2) Console.WriteLine("The number is two ");
+// >           	else if (x == 3) Console.WriteLine("The number is three ");
+// >           	else if (x == 4) Console.WriteLine("The number is four ");
+// >           	else if (x == 5) Console.WriteLine("The number is five ");
+// >           	else if (x == 6) Console.WriteLine("The number is six ");
+// >           	else Console.WriteLine("You didn't follow the rules"); 
+// >			// final else statement or default condition.
+// >           	Console.ReadLine();
+// >		}
+// >    }
+// >}
+// >```
+
+// >**Output:**
+
+// >>Enter an integer between 1 and 6: 5
+// >> <br>
+// >>The number is five
+
+// >It is always legal to nest if-else statements which means you can use one if or else if statement inside another if or else if statement.
+
+// >####4.Nested if:
+
+// >The syntax for a nested if is as follows:
+
+// > >if(expression 1) 
+// > > <br>
+// > >{	// Executes when the expression 1 is true
+// > > <br>
+// > >if(expression 2)
+// > > <br>
+// > >{ 	// Executes when the expression 2 is true
+// > > <br>
+// > > }
+// > > <br>
+// > >}
+
+// >**Example:**<br>
+// >C# Code:<br>
+// >C# program to read user name and password  from user and validate it with defined user name and password.
+// >```
+// >using System;
+// >namespace demo
+// >{
+// >   class Program
+// >   {
+// >	  public static void Main()
+// >	  {
+// >	    	String USERNAME = "admin";
+// >        String PASSWORD = "root";
+// >        string username, password;
+// >        Console.Write("Enter username:");
+// >        username = Console.ReadLine();
+// >        Console.Write("Enter password:");
+// >        password = Console.ReadLine();
+// >        if (username == USERNAME)
+// >        {
+// >            if (password == PASSWORD)
+// >            {
+// >              Console.WriteLine("Credentials are valid.");
+// >			}
+// >        }
+// >        if (username != USERNAME && password != PASSWORD)
+// >        {
+// >			Console.WriteLine("Credentials are invalid.");
+// >        }
+// >        Console.Read();
+// >       }
+// >   	}
+// >}
+
+// >```
+// >**Output:**
+
+// > >Enter username: admin
+// > > <br>
+// > >Enter password: root
+// > > <br>
+// > >Credentials are valid.
+
+// >####5. Switch case:
+
+// >A switch statement allows a variable to be tested for equality against a list of values.Each value is called a case, and the variable being switched on is checked for each switch case.
+
+// >**The following rules apply to a switch statement:**
+
+// >- The expression used in a switch statement must have an integral or enumerated type, or be of a class type in which the class has a single conversion function to an integral or enumerated type.
+// >- You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.
+// >- The constant-expression for a case must be the same data type as the variable in the switch, and it must be a constant or a literal.
+// >- When the variable being switched on is equal to a case, the statements following that case will execute until a break statement is reached.
+// >- When a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.
+// >- Not every case needs to contain a break. If no break appears, the flow of control will fall through to subsequent cases until a break is reached.
+// >- A switch statement can have an optional default case, which must appear at the end of the switch. The default case can be used for performing a task when none of the cases is true. No break is needed in the default case.
+
+// >**Syntax:**
+
+// > >int caseSwitch = 1;
+// > > <br>
+// > >switch (caseSwitch)
+// > > <br>
+// > >{
+// > > <br>
+// > >     case 1:
+// > > <br>
+// > >Console.WriteLine("Case 1");
+// > > <br>
+// > >break;
+// > > <br>
+// > >case 2:
+// > > <br>
+// > >Console.WriteLine("Case 2");
+// > > <br>
+// > >break;
+// > > <br>
+// > >default:
+// > > <br>
+// > >Console.WriteLine("Default case");
+// > > <br>
+// > >break;
+// > > <br>
+// > >}
+
+// > **Example:**<br>
+// >C# Code:<br>
+// >C# program to perform different arithmetic operation on two integers.
+// >```
+// >using System;
+// >namespace demo
+// >{
+// >   	class Program
+// >   	{
+// >       	public static void Main()
+// >       	{
+// >       	    int a, b, result;
+// >       	    int Choice;
+// >       	    Console.WriteLine("Program for
+// >			Addition, Subtraction, Multiplication and Division
+// >				of two numbers\n");
+// >      	    Console.Write("Enter First Number:");     
+// >       	    a = Convert.ToInt32(Console.ReadLine());
+// >       	    System.Console.Write("Enter Second Number:");
+// >       	    b =Convert.ToInt32(Console.ReadLine());
+// >       	    Console.WriteLine("Enter Your Choice: 
+// >				1 - Add, 2 - Sub, 3 - Mul, 4 - Div: ");
+// >       	    Console.Write("Enter your choice:");
+// >       	    Choice = Convert.ToInt32(Console.ReadLine());
+// >        	switch (Choice)
+// >            {
+// >                case 1:
+// >                   result = a + b;
+// >                   Console.WriteLine("{0}+{1} = {2}", a, b, result);
+// >                   break;
+// >
+// >                case 2:
+// >                   result = a - b;
+// >                   Console.WriteLine("{0}-{1} = {2}", a, b, result);
+// >                   break;
+// >
+// >                case 3:
+// >                    result = a * b;
+// >                    Console.WriteLine("{0}*{1} = {2}", a, b, result);
+// >                    break;
+// >
+// >                case 4:
+// >                    result = a / b;
+// >                    Console.WriteLine("{0}/{1} = 
+// >						{2}\n{3} % {4} = {5}", a, b, result, a, b, a % b);
+// >                    break;
+// >
+// >                default:
+// >                    Console.WriteLine("Invaid choice");
+// >                    break;
+// >                       
+// >            }
+// >           	Console.Write("....Thank you......");
+// >            Console.ReadLine();
+// >         
+// >        }
+// >	}
+// >}
+// >```
+
+// >**Output:**
+
+// > >Program for Addition, Subtraction, Multiplication and Division of two numbers
+// > > <br>
+// > >Enter First Number:12
+// > > <br>
+// > >Enter Second Number:12
+// > > <br>
+// > >Enter Your Choice: 1 - Add, 2 - Sub, 3 - Mul, 4 - Div: 3
+// > > <br>
+// > >12 * 12 = 144
+// > > <br>
+// > >....Thank you......
+
