@@ -8,7 +8,7 @@
  - [Constants](https://github.com/shashikirankantheti/C-sharp/blob/master/Constants)
  - [DataTypes](https://github.com/shashikirankantheti/C-sharp/blob/master/Data%20Types)
  - [Programming Constructs](https://github.com/shashikirankantheti/C-sharp/blob/master/programming%20constructs) <br>
-   -- Sequential Programming Constructs<br>
+   -- [Sequential Programming Constructs](https://github.com/shashikirankantheti/C-sharp/blob/master/Sequential%20Programming%20Constructs)<br>
    -- selection Programming Constructs<br>
    -- Iterative Programming Constructs<br>
  - Arrays<br>
