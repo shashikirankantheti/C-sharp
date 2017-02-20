@@ -27,7 +27,7 @@
  - [Parameters](https://github.com/shashikirankantheti/C-sharp/blob/master/parameters)<br>
    -- [Pass by Value](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20value%20Parameter)<br>
    -- [Pass by reference](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20reference%20parameter)<br>
-   -- Pass by out<br>
+   -- [Pass by out](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20out%20parameter)<br>
    -- Pass by param<br>
  - Object Oriented Programming<br>
  
