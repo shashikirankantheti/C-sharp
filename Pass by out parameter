@@ -23,35 +23,35 @@
 
 // >C# Program to demonstrate pass by out.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >   class Manipulator
-// >   {
-// >      public void getValue(out int x )
-// >      {
-// >         int temp = 6;
-// >         x = temp;
-// >      }
-// >   
-// >      static void Main(string[] args)
-// >      {
-// >         Manipulator n = new Manipulator();
-// >         
-// >         /* local variable definition */
-// >         int a = 26;
-// >         
-// >         Console.WriteLine("Before method call, value is : {0}", a);
-// >         
-// >         /* calling a function to get the value */
-// >         n.getValue(out a);
-// >
-// >         Console.WriteLine("After method call, value is : {0}", a);
-// >         Console.ReadLine();
-// >
-// >      }
-// >   }
-// >}
+using System;
+namespace Demo
+{
+   class Manipulator
+   {
+      public void getValue(out int x )
+      {
+         int temp = 6;
+         x = temp;
+      }
+   
+      static void Main(string[] args)
+      {
+         Manipulator n = new Manipulator();
+         
+         /* local variable definition */
+         int a = 26;
+         
+         Console.WriteLine("Before method call, value is : {0}", a);
+         
+         /* calling a function to get the value */
+         n.getValue(out a);
+
+         Console.WriteLine("After method call, value is : {0}", a);
+         Console.ReadLine();
+
+      }
+   }
+}
 // >```
 // >**Output:**
 
@@ -64,34 +64,34 @@
 
 // >C# Code:
 ```
-// >using System;
-// >namespace Demo
-// >{
-// >   class Manipulator
-// >   {
-// >      public void getValues(out int x, out int y )
-// >      {
-// >          Console.Write("Enter the first value: ");
-// >          x = Convert.ToInt32(Console.ReadLine());
-// >          Console.Write("Enter the second value: ");
-// >          y = Convert.ToInt32(Console.ReadLine());
-// >      }
-// >      static void Main(string[] args)
-// >      {
-// >         Manipulator n = new Manipulator();
-// >         
-// >         /* local variable definition */
-// >         int a , b;
-// >         
-// >         /* calling a function to get the values */
-// >         n.getValues(out a, out b);
-// >         
-// >         Console.WriteLine("After method call, first value: {0}", a);
-// >         Console.WriteLine("After method call, second value: {0}", b);
-// >         Console.ReadLine();
-// >      }
-// >   }
-// >}
+using System;
+namespace Demo
+{
+   class Manipulator
+   {
+      public void getValues(out int x, out int y )
+      {
+          Console.Write("Enter the first value: ");
+          x = Convert.ToInt32(Console.ReadLine());
+          Console.Write("Enter the second value: ");
+          y = Convert.ToInt32(Console.ReadLine());
+      }
+      static void Main(string[] args)
+      {
+         Manipulator n = new Manipulator();
+         
+         /* local variable definition */
+         int a , b;
+         
+         /* calling a function to get the values */
+         n.getValues(out a, out b);
+         
+         Console.WriteLine("After method call, first value: {0}", a);
+         Console.WriteLine("After method call, second value: {0}", b);
+         Console.ReadLine();
+      }
+   }
+}
 // >```
 // >**Output:** <br>
 // > >
