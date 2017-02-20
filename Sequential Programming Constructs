@@ -1,0 +1,71 @@
+// >---
+// >title: Sequential programming constructs in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Sequential programming constructs is a set of statements every statement will be executed one by one without leaving in middle.'
+// >    keywords: 'Sequential programming constructs,Serial programming constructs,programming constructs '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Sequential programming constructs .md
+
+
+
+// >###Sequential programming constructs:
+// >In this method if we provide set of statements every statement will be executed one by one without leaving in middle.
+
+
+// >**Example:**
+
+// >C# Code:<br>
+// >C# program that reads principle,TIme period,Rate of interest from user and find out Interest amount and Total amount to be paid.
+
+// >```
+// >using System;
+// >namespace ConsoleApplication11
+// >{
+// >	class Program
+// >	{
+// >		static void Main(string[] args)
+// >		{
+// >			int principle, time, rate;
+// >			double interest, amount;
+// >
+// >			Console.WriteLine("Enter  principle value:");
+// >			principle = Convert.ToInt32(Console.ReadLine());
+// >
+// >			Console.WriteLine("Enter  Time period:");
+// >			time = Convert.ToInt32(Console.ReadLine());
+// >
+// >			Console.WriteLine("Enter  Rate of Interest:");
+// >			rate = Convert.ToInt32(Console.ReadLine());
+// >
+// >			interest = principle * time * rate * 0.01;
+// >			amount = principle + interest;
+// >			Console.WriteLine("Interest Amount is: {0}", interest);
+// >			Console.Write("Total Amount is: {0}", amount);
+// >
+// >			Console.ReadLine();
+// >		}	
+// >	}
+// >}
+// >```
+// >**Output:**
+        
+// > >Enter  principle value:
+// > > <br>
+// > >10000
+// > > <br>
+// > >Enter  Time period:	
+// > >10
+// > > <br>
+// > >Enter  Rate of Interest:
+// > > <br>
+// > >3
+// > > <br>
+// > Interest Amount is: 3000
+// > > <br>
+// > >Total Amount is: 13000
+
+
