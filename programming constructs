@@ -1,0 +1,20 @@
+// >---
+// >title: programming constructs in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'programming constructs '
+// >    keywords: 'programming constructs  '
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_programming constructs .md
+
+
+// >#programming constructs:
+// >C#.Net supports 3 types of programming constructs.
+
+// >1. sequential programming constructs
+// >2. selection programming constructs
+// >3. Iterative programming constructs
+
