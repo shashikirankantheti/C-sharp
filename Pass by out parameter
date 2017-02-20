@@ -1,0 +1,109 @@
+// >---
+// >title: pass by out in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'pass by out in C#. '
+// >    keywords: 'pass by out in C#,pass by out'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_pass by out in C#.md
+
+// >### Pass by out:
+
+// >- A return statement can be used for returning only one value from a function. 
+// >- By using output parameters, you can return two values from a function. Output parameters are similar to reference parameters, except that they transfer data out of the method rather than into it.
+// >- The out keyword causes arguments to be passed by reference. This is like the ref keyword, except that ref requires that the variable be initialized before it is passed.
+// >- To use an out parameter, both the method definition and the calling method must explicitly use the out keyword.
+
+// >**Example:**
+ 
+// >C# Code:
+
+// >C# Program to demonstrate pass by out.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >   class Manipulator
+// >   {
+// >      public void getValue(out int x )
+// >      {
+// >         int temp = 6;
+// >         x = temp;
+// >      }
+// >   
+// >      static void Main(string[] args)
+// >      {
+// >         Manipulator n = new Manipulator();
+// >         
+// >         /* local variable definition */
+// >         int a = 26;
+// >         
+// >         Console.WriteLine("Before method call, value is : {0}", a);
+// >         
+// >         /* calling a function to get the value */
+// >         n.getValue(out a);
+// >
+// >         Console.WriteLine("After method call, value is : {0}", a);
+// >         Console.ReadLine();
+// >
+// >      }
+// >   }
+// >}
+// >```
+// >**Output:**
+
+// > >Before method call, value is: 26 <br>
+// > >After method call, value is : 6
+
+// >- The variable supplied for the output parameter need not be assigned a value. Output parameters are particularly useful when you need to return values from a method through the parameters without assigning an initial value to the parameter. 
+
+// >**Example:** <br>
+
+// >C# Code:
+```
+// >using System;
+// >namespace Demo
+// >{
+// >   class Manipulator
+// >   {
+// >      public void getValues(out int x, out int y )
+// >      {
+// >          Console.Write("Enter the first value: ");
+// >          x = Convert.ToInt32(Console.ReadLine());
+// >          Console.Write("Enter the second value: ");
+// >          y = Convert.ToInt32(Console.ReadLine());
+// >      }
+// >      static void Main(string[] args)
+// >      {
+// >         Manipulator n = new Manipulator();
+// >         
+// >         /* local variable definition */
+// >         int a , b;
+// >         
+// >         /* calling a function to get the values */
+// >         n.getValues(out a, out b);
+// >         
+// >         Console.WriteLine("After method call, first value: {0}", a);
+// >         Console.WriteLine("After method call, second value: {0}", b);
+// >         Console.ReadLine();
+// >      }
+// >   }
+// >}
+// >```
+// >**Output:** <br>
+// > >
+// > >Enter the first value: 6 <br>
+// > >Enter the second value: 4 <br>
+// > >After method call, first value: 6 <br>
+// > >After method call, second value: 4 <br>
+
+
+// >#### Difference between ref and out parameters:
+// >|[center]ref[/center]|[center]out[/center]|
+// >|---|---|
+// >| ref is a mechanism of parameter passing by reference|Out is also a mechanism of parameter passing by reference|
+// >|A variable to be sent as ref parameter must be initialized.|A variable to be sent as ref parameter must be initialized.|
+// >|ref is bidirectional i.e. we have to supply value to the formal parameters and we get back processed value.|Out is a unidirectional i.e. we don't supply any value but we get back processed value.|
