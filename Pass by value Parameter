@@ -1,0 +1,59 @@
+// >---
+// >title: pass by value parameters in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'pass by value in C#. '
+// >    keywords: 'pass by value parameters in C#,pass by value,pass by value in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_pass by value in C#.md
+
+// ># pass by value:
+
+// >- This is the default parameter type in C#. 
+// >- If the parameter does not have any modifier it is “value” parameter by default.
+// >- When we use “value” parameters the actual value is passed to the function, which means changes made to the parameter is local to the function and is not passed back to the calling part.
+
+// >**Example:**
+
+// >C# Code:
+
+// >C# Program to demonstrate Pass by Value.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >    class PassingValByVal
+// >    {
+// >        static void SquareIt(int x)
+// >        // The parameter x is passed by value.
+// >        // Changes to x will not affect the original value of x.
+// >        {
+// >            x *= x;
+// >            System.Console.WriteLine("The value inside the method: {0}", x);
+// >        }
+// >        static void Main()
+// >        {
+// >            Console.Write("Enter the value:");
+// >            int n = Convert.ToInt32(Console.ReadLine());
+// >            System.Console.WriteLine("The value before calling the method: {0}", n);
+// >
+// >            SquareIt(n);  // Passing the variable by value.
+// >            System.Console.WriteLine("The value after calling the method: {0}", n);
+// >
+// >            // Keep the console window open in debug mode.
+// >            System.Console.WriteLine("Press any key to exit.");
+// >            System.Console.ReadLine();
+// >        }
+// >    }
+// >}
+// >```
+// >**Output:**
+>
+// > >Enter the value:6 <br>
+// > >The value before calling the method: 6 <br>
+// > >The value inside the method: 36 <br>
+// > >The value after calling the method: 6 <br>
+// > >Press any key to exit. <br>
