@@ -14,7 +14,7 @@
  - [Arrays](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays)<br>
    -- [Arrays According to Physical size](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays%20According%20to%20Physical%20Size)<br>
        --- [Single dimensional array](https://github.com/shashikirankantheti/C-sharp/blob/master/Single%20Dimensional%20Arrays)<br>
-       --- Multi dimensional array<br>
+       --- [Multi dimensional array](https://github.com/shashikirankantheti/C-sharp/blob/master/Multi-dimensional%20Arrays)<br>
    -- Arrays according to memory size<br>
    -- Arrays according to Nature of Physical size<br>
    -- Jagged arrau<br>
