@@ -1,0 +1,123 @@
+// >---
+// >title: Array Class in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Array class is the base class for all the arrays in C#. It is defined in the System namespace. The Array class provides various properties and methods to work with arrays. '
+// >    keywords: 'Array class in C#,Properties of Array class,Methods of array class,Methods of array objects'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Array Class.md
+
+// >###Array Class:
+
+// >The Array class is the base class for all the arrays in C#. It is defined in the System namespace. The Array class provides various properties and methods to work with arrays.
+
+// >####Properties of the Array Class:
+
+// >The most commonly used properties of the Array class:
+
+// >|Sr.No|Property|
+// >|-------		|---------|
+// >|1| IsFixedSize<br>Gets a value indicating whether the array has a fixed size.|
+// >|2|IsReadOnly<br>Gets a value indicating whether the array is read-only.|
+// >|3|Length<br>Gets a 32-bit Integer that represents the total number of elements in all the dimensions of the array.|
+// >|4|LongLength<br>Gets a 64-bit integer that represents the total number of elements in all the dimensions of the array.|
+// >|5|Rank<br>Gets the rank (number of dimensions) of the array.|
+
+
+// >####Methods of the Array class:
+
+// >The most commonly used methods of the Array class:
+
+// >|Sr.No|Methods|
+// >|-----|-------|
+// >|1|Clear (or) Clear(ArrayName,int index,int length);<br>Sets a range of elements in the Array to zero, to false, or to null, depending on the element type.|
+// >|2|Copy(Array, Array, Int32) (or) Copy(source array,Destination array,int Length) (or) Copy(source array,int index,Destination array,int index,int Length);<br>Copies a range of elements from an Array starting at the first element and pastes them into another Array starting at the first element. The length is specified as a 32-bit integer.|
+// >|3|CopyTo(Array, Int32)(or) CopyTo(Destination Array,int index); <br>Copies all the elements of the current one-dimensional Array to the specified one-dimensional Array starting at the specified destination Array index. The index is specified as a 32-bit integer.|
+// >|4|GetLength <br>Gets a 32-bit integer that represents the number of elements in the specified dimension of the Array.|
+// >|5|GetLongLength <br>Gets a 64-bit integer that represents the number of elements in the specified dimension of the Array.|
+// >|6|GetLongLength <br>Gets a 64-bit integer that represents the number of elements in the specified dimension of the Array.|
+// >|7|GetType <br>Gets the Type of the current instance. (Inherited from Object.)|
+// >|8|GetUpperBound <br>Gets the upper bound of the specified dimension in the Array.|
+// >|9|GetValue(Int32) <br>Gets the value at the specified position in the one-dimensional Array. The index is specified as a 32-bit integer.|
+// >|10|IndexOf(Array, Object) <br>Searches for the specified object and returns the index of the first occurrence within the entire one-dimensional Array.|
+// >|11|Reverse(Array) (or) Reverse(Arrayname,initial index,initial lengthg); <br>Reverses the sequence of the elements in the entire one-dimensional Array.|
+// >|12|SetValue(Object, Int32) <br>Sets a value to the element at the specified position in the one-dimensional Array. The index is specified as a 32-bit integer.
+// >|
+// >|13|Sort(Array) (or) Sort(ArrayName,int index,intLength); <br>Sorts the elements in an entire one-dimensional Array using the IComparable implementation of each element of the Array.This method is used to sort the elements of array in ascending order. |
+// >|14|ToStringk <br>Returns a string that represents the current object. (Inherited from Object.)|
+// >|15|Copy Method[copy ArrayName]<br>Is used to copy the elements from one array to another array.it can copy few or all elements).|
+// >|16| BinarySearch(ArrayName,Search Element) (or) BinarySearch(ArrayName,int index,int Length,search element); <br>This method returns index value of searching element if it is available,otherwise it returns a negative value.|
+// >|17|Resize(ref ArrayName,NewSize);<br> It is used to change the size of an array.|
+
+
+// >**Example:**
+
+// >C# code:<br>
+// >C# program to perform sort and reverse methods of the array class.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class Program
+// >	{
+// >		static void Main(string[] args)
+// >		{
+// >			int s,i;
+// >			Console.Write("Enter size of array:");
+// >			s = Convert.ToInt32(Console.ReadLine());
+// >
+// >			int[] A = new int[s];
+// >			Console.WriteLine("Enter elements into array:");
+// >			for (i = 0; i < s; i++)
+// >			{
+// >				A[i] = Convert.ToInt32(Console.ReadLine());
+// >			}
+// >           
+// >			int[] temp = A;
+// >			Console.Write("Original Array: ");
+// >
+// >			foreach (int x in A)
+// >			{
+// >				Console.Write(x + " ");
+// >			}
+// >			Console.WriteLine();
+// >
+// >			// reverse the array
+// >			Array.Reverse(temp);
+// >			Console.Write("Reversed Array: ");
+// >			foreach (int x in temp)
+// >			{
+// >				Console.Write(x + " ");
+// >			}
+// >			Console.WriteLine();
+// >
+// >			//sort the array
+// >			Array.Sort(A);
+// >			Console.Write("Sorted Array: ");
+// >			foreach (int x in A)
+// >			{
+// >				Console.Write(x + " ");
+// >			}
+// >			Console.WriteLine();
+// >			Console.ReadLine();
+// >		}	
+// >	}
+// >}
+// >```
+
+// >**Output:**<br>
+// > >Enter size of array: 4
+// > > <br>
+// > >Enter elements into array: <br>
+// > > 12 <br>
+// > > 06 <br>
+// > >25 <br>
+// > >04 <br>
+// > >Original Array: 12  6  25  4 <br>
+// > >Reversed Array: 4  25  6  12 <br>
+// > >Sorted Array: 4  6  12  25 
+
+
