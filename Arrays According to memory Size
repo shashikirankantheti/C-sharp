@@ -1,0 +1,28 @@
+// >---
+// >title: Arrays According to memory Size in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Arrays According to memory Size in C# '
+// >    keywords: 'Arrays in C#,Arrays According to memory Size in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Arrays According to memory Size.md
+
+
+
+// >###According to memory size:
+
+// >Arrays according to memory size are characterized into two types:
+// ><br>
+
+// >1.Normal array:<br>
+// >An array which occupies less than 64kb is know as normal array.
+
+
+// >2.Huge array:<br>
+// >An array which occupies greater than or equal to 64kb is know as huge array.
+
+
+
