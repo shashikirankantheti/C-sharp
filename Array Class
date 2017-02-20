@@ -58,54 +58,54 @@
 // >C# code:<br>
 // >C# program to perform sort and reverse methods of the array class.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	class Program
-// >	{
-// >		static void Main(string[] args)
-// >		{
-// >			int s,i;
-// >			Console.Write("Enter size of array:");
-// >			s = Convert.ToInt32(Console.ReadLine());
-// >
-// >			int[] A = new int[s];
-// >			Console.WriteLine("Enter elements into array:");
-// >			for (i = 0; i < s; i++)
-// >			{
-// >				A[i] = Convert.ToInt32(Console.ReadLine());
-// >			}
-// >           
-// >			int[] temp = A;
-// >			Console.Write("Original Array: ");
-// >
-// >			foreach (int x in A)
-// >			{
-// >				Console.Write(x + " ");
-// >			}
-// >			Console.WriteLine();
-// >
-// >			// reverse the array
-// >			Array.Reverse(temp);
-// >			Console.Write("Reversed Array: ");
-// >			foreach (int x in temp)
-// >			{
-// >				Console.Write(x + " ");
-// >			}
-// >			Console.WriteLine();
-// >
-// >			//sort the array
-// >			Array.Sort(A);
-// >			Console.Write("Sorted Array: ");
-// >			foreach (int x in A)
-// >			{
-// >				Console.Write(x + " ");
-// >			}
-// >			Console.WriteLine();
-// >			Console.ReadLine();
-// >		}	
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int s,i;
+			Console.Write("Enter size of array:");
+			s = Convert.ToInt32(Console.ReadLine());
+
+			int[] A = new int[s];
+			Console.WriteLine("Enter elements into array:");
+			for (i = 0; i < s; i++)
+			{
+				A[i] = Convert.ToInt32(Console.ReadLine());
+			}
+           
+			int[] temp = A;
+			Console.Write("Original Array: ");
+
+			foreach (int x in A)
+			{
+				Console.Write(x + " ");
+			}
+			Console.WriteLine();
+
+			// reverse the array
+			Array.Reverse(temp);
+			Console.Write("Reversed Array: ");
+			foreach (int x in temp)
+			{
+				Console.Write(x + " ");
+			}
+			Console.WriteLine();
+
+			//sort the array
+			Array.Sort(A);
+			Console.Write("Sorted Array: ");
+			foreach (int x in A)
+			{
+				Console.Write(x + " ");
+			}
+			Console.WriteLine();
+			Console.ReadLine();
+		}	
+	}
+}
 // >```
 
 // >**Output:**<br>
