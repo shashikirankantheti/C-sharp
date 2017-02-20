@@ -45,45 +45,45 @@
 // >C# Code:<br>
 // >Program for bookshop,read book id,book name,book cost price from user.Provide 20% of discount for cost price >500,find discount amount and selling price.
 // >```		
-// >using System;
-// >namespace BookShop
-// >{
-// >   	class CostCal
-// >   	 {
-// >        public static void Main(string[] args)
-// >        {
-// >           int bookid, bookcost;
-// >           string bookname;
-// >           Console.Write("enter book id:");
-// >           bookid = Convert.ToInt32(Console.ReadLine());
-// >
-// >           Console.Write("enter book name:");
-// >           bookname = Console.ReadLine();
-// >			//we don't have to convert ReadLine takes
-// >			input in string format.
-// >
-// >            Console.Write("enter book cost:");
-// >            bookcost =Convert.ToInt32(Console.ReadLine());
-// >
-// >            Console.WriteLine("-----------------------------------");
-// >            Console.WriteLine("book id :" + bookid);
-// >            Console.WriteLine("book name :" + bookname);
-// >            Console.WriteLine("book cost :" + bookcost);
-// >            if (bookcost > 500)
-// >            {
-// >                double discountamount = 20;
-// >
-// >                double discountamount1 = bookcost * discountamount * 0.01;
-// >                double sellingprice = bookcost - discountamount1;
-// >                                          
-// >                Console.WriteLine("Discount amount:" + discountamount1);
-// >                Console.WriteLine("selling price :" + sellingprice);
-// >            }
-// >            
-// >            Console.ReadLine();
-// >        }
-// >    }
-// >}
+using System;
+namespace BookShop
+{
+   	class CostCal
+   	 {
+        public static void Main(string[] args)
+        {
+           int bookid, bookcost;
+           string bookname;
+           Console.Write("enter book id:");
+           bookid = Convert.ToInt32(Console.ReadLine());
+
+           Console.Write("enter book name:");
+           bookname = Console.ReadLine();
+			//we don't have to convert ReadLine takes
+			input in string format.
+
+            Console.Write("enter book cost:");
+            bookcost =Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("book id :" + bookid);
+            Console.WriteLine("book name :" + bookname);
+            Console.WriteLine("book cost :" + bookcost);
+            if (bookcost > 500)
+            {
+                double discountamount = 20;
+
+                double discountamount1 = bookcost * discountamount * 0.01;
+                double sellingprice = bookcost - discountamount1;
+                                          
+                Console.WriteLine("Discount amount:" + discountamount1);
+                Console.WriteLine("selling price :" + sellingprice);
+            }
+            
+            Console.ReadLine();
+        }
+    }
+}
 // >```
 // >**Output:**
 
@@ -134,31 +134,31 @@
 // > C# Code:<br>
 // >C# program to read a number from user and find out it is a positive number or negative number.
 // >```
-// >using System;
-// >namespace demos
-// >{
-// >	class Program
-// >	{
-// >        public static void Main()
-// >        {
-// >            Console.Write("Enter the number:");
-// >
-// >            int a=int.Parse(Console.ReadLine());
-// >
-// >            if(a>0)
-// >            {
-// >               Console.WriteLine("Given number is positive.");
-// >            }
-// >
-// >            else
-// >            {
-// >               Console.WriteLine("Given number is negative.");
-// >            }
-// >
-// >            Console.ReadLine();   // To stay on the command promt
-// >        }        
-// >    }
-// >}
+using System;
+namespace demos
+{
+	class Program
+	{
+        public static void Main()
+        {
+            Console.Write("Enter the number:");
+
+            int a=int.Parse(Console.ReadLine());
+
+            if(a>0)
+            {
+               Console.WriteLine("Given number is positive.");
+            }
+
+            else
+            {
+               Console.WriteLine("Given number is negative.");
+            }
+
+            Console.ReadLine();   // To stay on the command promt
+        }        
+    }
+}
 // >```
 
 // >**output:**
@@ -209,28 +209,28 @@
 // > C# Code:<br>
 // > C# program to read 1 to 6 integers and print selected integer name on screen.
 // > ```
-// > using System;
-// > namespace demo	
-// > {
-// > 	class Program
-// >   	{
-// >       	public static void Main(string[] args)
-// >       	{
-// >           	int x;
-// >      		Console.Write("Enter an integer between 1 and 6:");
-// >       		x=Convert.ToInt32( Console.ReadLine());
-// >           	if (x == 1) Console.WriteLine("The number is one ");
-// >           	else if (x == 2) Console.WriteLine("The number is two ");
-// >           	else if (x == 3) Console.WriteLine("The number is three ");
-// >           	else if (x == 4) Console.WriteLine("The number is four ");
-// >           	else if (x == 5) Console.WriteLine("The number is five ");
-// >           	else if (x == 6) Console.WriteLine("The number is six ");
-// >           	else Console.WriteLine("You didn't follow the rules"); 
-// >			// final else statement or default condition.
-// >           	Console.ReadLine();
-// >		}
-// >    }
-// >}
+ using System;
+ namespace demo	
+ {
+ 	class Program
+   	{
+       	public static void Main(string[] args)
+       	{
+           	int x;
+      		Console.Write("Enter an integer between 1 and 6:");
+       		x=Convert.ToInt32( Console.ReadLine());
+           	if (x == 1) Console.WriteLine("The number is one ");
+           	else if (x == 2) Console.WriteLine("The number is two ");
+           	else if (x == 3) Console.WriteLine("The number is three ");
+           	else if (x == 4) Console.WriteLine("The number is four ");
+           	else if (x == 5) Console.WriteLine("The number is five ");
+           	else if (x == 6) Console.WriteLine("The number is six ");
+           	else Console.WriteLine("You didn't follow the rules"); 
+			// final else statement or default condition.
+           	Console.ReadLine();
+		}
+    }
+}
 // >```
 
 // >**Output:**
@@ -261,35 +261,35 @@
 // >C# Code:<br>
 // >C# program to read user name and password  from user and validate it with defined user name and password.
 // >```
-// >using System;
-// >namespace demo
-// >{
-// >   class Program
-// >   {
-// >	  public static void Main()
-// >	  {
-// >	    	String USERNAME = "admin";
-// >        String PASSWORD = "root";
-// >        string username, password;
-// >        Console.Write("Enter username:");
-// >        username = Console.ReadLine();
-// >        Console.Write("Enter password:");
-// >        password = Console.ReadLine();
-// >        if (username == USERNAME)
-// >        {
-// >            if (password == PASSWORD)
-// >            {
-// >              Console.WriteLine("Credentials are valid.");
-// >			}
-// >        }
-// >        if (username != USERNAME && password != PASSWORD)
-// >        {
-// >			Console.WriteLine("Credentials are invalid.");
-// >        }
-// >        Console.Read();
-// >       }
-// >   	}
-// >}
+using System;
+namespace demo
+{
+   class Program
+   {
+	  public static void Main()
+	  {
+	    	String USERNAME = "admin";
+        String PASSWORD = "root";
+        string username, password;
+        Console.Write("Enter username:");
+        username = Console.ReadLine();
+        Console.Write("Enter password:");
+        password = Console.ReadLine();
+        if (username == USERNAME)
+        {
+            if (password == PASSWORD)
+            {
+              Console.WriteLine("Credentials are valid.");
+			}
+        }
+        if (username != USERNAME && password != PASSWORD)
+        {
+			Console.WriteLine("Credentials are invalid.");
+        }
+        Console.Read();
+       }
+   	}
+}
 
 // >```
 // >**Output:**
@@ -346,60 +346,60 @@
 // >C# Code:<br>
 // >C# program to perform different arithmetic operation on two integers.
 // >```
-// >using System;
-// >namespace demo
-// >{
-// >   	class Program
-// >   	{
-// >       	public static void Main()
-// >       	{
-// >       	    int a, b, result;
-// >       	    int Choice;
-// >       	    Console.WriteLine("Program for
-// >			Addition, Subtraction, Multiplication and Division
-// >				of two numbers\n");
-// >      	    Console.Write("Enter First Number:");     
-// >       	    a = Convert.ToInt32(Console.ReadLine());
-// >       	    System.Console.Write("Enter Second Number:");
-// >       	    b =Convert.ToInt32(Console.ReadLine());
-// >       	    Console.WriteLine("Enter Your Choice: 
-// >				1 - Add, 2 - Sub, 3 - Mul, 4 - Div: ");
-// >       	    Console.Write("Enter your choice:");
-// >       	    Choice = Convert.ToInt32(Console.ReadLine());
-// >        	switch (Choice)
-// >            {
-// >                case 1:
-// >                   result = a + b;
-// >                   Console.WriteLine("{0}+{1} = {2}", a, b, result);
-// >                   break;
-// >
-// >                case 2:
-// >                   result = a - b;
-// >                   Console.WriteLine("{0}-{1} = {2}", a, b, result);
-// >                   break;
-// >
-// >                case 3:
-// >                    result = a * b;
-// >                    Console.WriteLine("{0}*{1} = {2}", a, b, result);
-// >                    break;
-// >
-// >                case 4:
-// >                    result = a / b;
-// >                    Console.WriteLine("{0}/{1} = 
-// >						{2}\n{3} % {4} = {5}", a, b, result, a, b, a % b);
-// >                    break;
-// >
-// >                default:
-// >                    Console.WriteLine("Invaid choice");
-// >                    break;
-// >                       
-// >            }
-// >           	Console.Write("....Thank you......");
-// >            Console.ReadLine();
-// >         
-// >        }
-// >	}
-// >}
+using System;
+namespace demo
+{
+   	class Program
+   	{
+       	public static void Main()
+       	{
+       	    int a, b, result;
+       	    int Choice;
+       	    Console.WriteLine("Program for
+			Addition, Subtraction, Multiplication and Division
+				of two numbers\n");
+      	    Console.Write("Enter First Number:");     
+       	    a = Convert.ToInt32(Console.ReadLine());
+       	    System.Console.Write("Enter Second Number:");
+       	    b =Convert.ToInt32(Console.ReadLine());
+       	    Console.WriteLine("Enter Your Choice: 
+				1 - Add, 2 - Sub, 3 - Mul, 4 - Div: ");
+       	    Console.Write("Enter your choice:");
+       	    Choice = Convert.ToInt32(Console.ReadLine());
+        	switch (Choice)
+            {
+                case 1:
+                   result = a + b;
+                   Console.WriteLine("{0}+{1} = {2}", a, b, result);
+                   break;
+
+                case 2:
+                   result = a - b;
+                   Console.WriteLine("{0}-{1} = {2}", a, b, result);
+                   break;
+
+                case 3:
+                    result = a * b;
+                    Console.WriteLine("{0}*{1} = {2}", a, b, result);
+                    break;
+
+                case 4:
+                    result = a / b;
+                    Console.WriteLine("{0}/{1} = 
+						{2}\n{3} % {4} = {5}", a, b, result, a, b, a % b);
+                    break;
+
+                default:
+                    Console.WriteLine("Invaid choice");
+                    break;
+                       
+            }
+           	Console.Write("....Thank you......");
+            Console.ReadLine();
+         
+        }
+	}
+}
 // >```
 
 // >**Output:**
