@@ -11,7 +11,7 @@
    -- [Sequential Programming Constructs](https://github.com/shashikirankantheti/C-sharp/blob/master/Sequential%20Programming%20Constructs)<br>
    -- [selection Programming Constructs](https://github.com/shashikirankantheti/C-sharp/blob/master/Selective%20Programming%20constructs)<br>
    -- [Iterative Programming Constructs](https://github.com/shashikirankantheti/C-sharp/blob/master/Iterative%20Programming%20Constructs)<br>
- - Arrays<br>
+ - [Arrays](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays)<br>
    -- Arrays According to Physical size<br>
       -- Single dimensional array<br>
       -- Multi dimensional array<br>
