@@ -1,0 +1,60 @@
+// >---
+// >title: Boxing in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Boxing in C#. '
+// >    keywords: 'Boxing in C#,,Boxing'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Boxing.md
+
+
+// >### Boxing:
+// >Boxing is an implicit conversion of a value type to the type object or to any interface type implemented by this value type. Boxing a value type allocates an object instance on the heap and copies the value into the new object.
+
+// >**Example:**
+
+// > > int i = 123; <br>
+// > > // Boxing copies the value of i into object o. <br>
+// > > object o = i;   <br>
+
+// >It is also possible to perform the boxing explicitly , but explicit boxing is never required:
+ 
+// > >int i = 123; <br>
+// > >object o = (object)i;  // explicit boxing <br>
+
+// >**Example of Boxing:**
+// ><br>
+// >C# COde: <br>
+// >C# Program that converts an integer variable i to an object o by using boxing. Then, the value stored in the variable i is changed from 143 to 341. This shows that the original value type and the boxed object use separate memory locations, and therefore can store different values.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class TestBoxing
+// >	{
+// >		public static void Main()
+// >		{
+// >			int i = 143;
+// >
+// >			// Boxing copies the value of i into object o.
+// >
+// >			object o = i;
+// >
+// >			// Change the value of i.
+// >			i = 341;
+// >
+// >			// The change in i does not effect the value stored in o.
+// >			Console.WriteLine("The value-type value = {0}", i);
+// >			Console.WriteLine("The object-type value = {0}", o);
+// >			Console.Read();
+// >		}
+// >	}
+// >}
+// >```
+// >**Output:**<br>
+// > >The value-type value = 341 <br>
+// > >The object-type value = 143 <br>
+
