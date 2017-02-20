@@ -1,0 +1,162 @@
+// >---
+// >title: Single Dimensional Arrays in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Single-dimensional arrays are the simplest form of arrays. These types of arrays are used to store number of items of a predefined type. '
+// >    keywords: 'Arrays in C#,Arrays,Single Dimensional Array in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Single Dimensional Array.md
+
+// >###Single Dimensional Arrays:
+
+// >Single-dimensional arrays are the simplest form of arrays. These types of arrays are used to store number of items of a predefined type. All items in a single dimension array are stored in a row starting from 0 to the size of array - 1.
+
+// >Single Dimensional array is also called one-dimensional array.
+
+// >An Array which has one row and multiple columns (or) one column and multiple rows is know as single dimensional array.
+
+// >####Declaring a Single Dimensional array :
+// > >
+// > >DataType[] VariableName = new DataType[Number];
+// > > <br>
+// >- DataType can be char, int, float, double, decimal, string, etc.
+// >- VariableName is the name of the array.
+// >- The square brackets [] on the left of the assignment operator are used to let the compiler know that you are declaring an array instead of a normal variable.
+// >- The new operator allows the compiler to reserve memory.
+// >- The [Number] factor is used to specify the number of items of the list.
+
+// >**Example:**
+
+// > >int[] arr = new int[10];
+// > > <br>
+// > >double numbers = new double[5];
+// > > <br>
+// > >string[] names = new string[2];
+// > > <br>
+
+// >#### initializing Single dimensional array:
+ 
+// > >int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5, 6,7,8,9,10 };
+// > > <br> 
+// > >string[ ] names = new string[ ] { "venkat","shashi", "kiran", "Tinitiate", "Kishore", "shyam" };
+// > > <br>
+
+// >**Example:**
+// ><br>
+
+// >C# Code:<br>
+// >C# program to read size of array and elements into array and display it to console.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class Program
+// >	{
+// >		public static void Main(string[] args)
+// >		{
+// >			int i, s;
+// >			Console.WriteLine("Enter size of array:");
+// >			s = Convert.ToInt32(Console.ReadLine());
+// >			int[] A = new int[s];
+// >			Console.WriteLine("Enter elements into array:");
+// >			for (i = 0; i < s; i++)
+// >			{
+// >				A[i] = Convert.ToInt32(Console.ReadLine());
+// >			}
+// >			Console.WriteLine("Elements in array are:");
+// >			for (i = 0; i < s; i++)
+// >			{
+// >				Console.WriteLine(A[i]);
+// >			}
+// >			Console.ReadLine();
+// >		}
+// >	}
+// >}
+// >```
+// >**Output:**
+// > > <br>
+// > >Enter size of array:
+// > > <br>
+// > >4
+// > > <br>
+// > >Enter elements into array:
+// > > <br>
+// > >06
+// > > <br>
+// > >26
+// > > <br>
+// > >25
+// > > <br>
+// > >24
+// > > <br>
+// > >Elements in array are:
+// > > <br>
+// > >06
+// > > <br>
+// > >26
+// > > <br>
+// > >25
+// > > <br>
+// > >24
+// > > <br>
+
+// >**Note:** If you do not initialize an array at the time of declaration, the array members are automatically initialized to the default initial value for the array type. Also, if you declare the array as a field of a type, it will be set to the default value null when you instantiate the type.
+
+// >#####Using foreach loop in Single Dimensional array:
+
+// >- In a for loop, you should know the number of element of the array. If you don't, the C# language allows you to let the compiler use its internal mechanism to get this count and use it to know where to stop counting. To get you with this, C# provides the foreach operator.
+// >- foreach loop is used on enumerator type only.
+// >- foreach is read-only loop.
+
+// >C# Code:<br>
+// >C# program to read size of array and elements into array and display it to console using foreach loop.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class Program
+// >	{
+// >		public static void Main(string[] args)
+// >		{
+// >			int i, s;
+// >			Console.Write("Enter size of array:");
+// >			s = Convert.ToInt32(Console.ReadLine());
+// >			int[] A = new int[s];
+// >			for (i = 0; i < s; i++)
+// >			{
+// >				Console.Write("Enter array element at *{0}:", i);
+// >				A[i] = Convert.ToInt32(Console.ReadLine());
+// >			}
+// >			Console.WriteLine("Elements in array are:");
+// >			foreach(int x in A)
+// >			{
+// >				Console.WriteLine(x);
+// >			}
+// >			Console.ReadLine();
+// >		}
+// >	}
+// >}
+// >```
+// >**Output:**<br>
+// > >Enter size of array:<br>
+// > >4<br>
+// > >Enter array element at ``*0``:6<br>
+// > >Enter array element at ``*1``:26<br>
+// > >Enter array element at ``*2``:25<br>
+// > >Enter array element at ``*3``:24<br>
+// > >Elements in array are:
+// > > <br>
+// > >6
+// > > <br>
+// > >26
+// > > <br>
+// > >25
+// > > <br>
+// > >24
+// > > <br>
+
+
+
