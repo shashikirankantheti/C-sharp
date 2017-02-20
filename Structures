@@ -45,52 +45,52 @@
 // >C# Code:<br>
 // >C# program to read static book details and print to console using Structures.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	struct Books
-// >	{
-// >		public string title;
-// >		public string author;
-// >		public string subject;
-// >		public int book_id;
-// >	};
-// >	public class Program
-// >	{
-// >		public static void Main(string[] args)
-// >		{
-// >			Books Book1;   /* Declare Book1 of type Book */
-// >			Books Book2;   /* Declare Book2 of type Book */
-// >
-// >			/* book 1 specification */
-// >			Book1.title = "Head First C#";
-// >			Book1.author = "Jennifer Greene, Andrew Stellman";
-// >			Book1.subject = "C# Programming Tutorial";
-// >			Book1.book_id = 645866;
-// >			/* book 2 specification */	
-// >			Book2.title = "C# in Depth";
-// >			Book2.author = "Jon Skeet";
-// >			Book2.subject = "C# Programming Tutorial";
-// >			Book2.book_id = 6426596;
-// >	
-// >			/* print Book1 info */
-// >			Console.WriteLine("---- Book1 Details------");
-// >			Console.WriteLine("Book 1 title : {0}", Book1.title);
-// >			Console.WriteLine("Book 1 author : {0}", Book1.author);
-// >			Console.WriteLine("Book 1 subject : {0}", Book1.subject);
-// >			Console.WriteLine("Book 1 book_id :{0}", Book1.book_id);
-// >			Console.ReadLine();
-// >			/* print Book2 info */
-// >			Console.WriteLine("---- Book2 Details------");
-// >			Console.WriteLine("Book 2 title : {0}", Book2.title);
-// >			Console.WriteLine("Book 2 author : {0}", Book2.author);
-// >			Console.WriteLine("Book 2 subject : {0}", Book2.subject);
-// >			Console.WriteLine("Book 2 book_id : {0}", Book2.book_id);
-// >			Console.ReadLine();
-// >
-// >		}
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	struct Books
+	{
+		public string title;
+		public string author;
+		public string subject;
+		public int book_id;
+	};
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Books Book1;   /* Declare Book1 of type Book */
+			Books Book2;   /* Declare Book2 of type Book */
+
+			/* book 1 specification */
+			Book1.title = "Head First C#";
+			Book1.author = "Jennifer Greene, Andrew Stellman";
+			Book1.subject = "C# Programming Tutorial";
+			Book1.book_id = 645866;
+			/* book 2 specification */	
+			Book2.title = "C# in Depth";
+			Book2.author = "Jon Skeet";
+			Book2.subject = "C# Programming Tutorial";
+			Book2.book_id = 6426596;
+	
+			/* print Book1 info */
+			Console.WriteLine("---- Book1 Details------");
+			Console.WriteLine("Book 1 title : {0}", Book1.title);
+			Console.WriteLine("Book 1 author : {0}", Book1.author);
+			Console.WriteLine("Book 1 subject : {0}", Book1.subject);
+			Console.WriteLine("Book 1 book_id :{0}", Book1.book_id);
+			Console.ReadLine();
+			/* print Book2 info */
+			Console.WriteLine("---- Book2 Details------");
+			Console.WriteLine("Book 2 title : {0}", Book2.title);
+			Console.WriteLine("Book 2 author : {0}", Book2.author);
+			Console.WriteLine("Book 2 subject : {0}", Book2.subject);
+			Console.WriteLine("Book 2 book_id : {0}", Book2.book_id);
+			Console.ReadLine();
+
+		}
+	}
+}
 // >```
 // >**Output:** <br>
 // > >---- Book1 Details------ <br>
@@ -131,59 +131,59 @@
 // >C# Code:<br>
 // >C# program to read static book details and print to console using Structures.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	struct Books
-// >	{
-// >		private string title;
-// >		private string author;
-// >		private string subject;
-// >		private int book_id;
-// >		public void getValues(string t, string a, string s, int id)
-// >		{
-// >			title = t;
-// >			author = a;
-// >			subject = s;
-// >			book_id = id;
-// >		}	
-// >		public void display()
-// >		{
-// >			Console.WriteLine("Title : {0}", title);
-// >			Console.WriteLine("Author : {0}", author);
-// >			Console.WriteLine("Subject : {0}", subject);
-// >			Console.WriteLine("Book_id :{0}", book_id);
-// >		}
-// >	};
-// >	public class testStructure
-// >	{
-// >		public static void Main(string[] args)
-// >		{
-// >			Books Book1 = new Books(); /* Declare Book1 of type Book */
-// >			Books Book2 = new Books(); /* Declare Book2 of type Book */
-// >
-// >			/* book 1 specification */
-// >			Book1.getValues("Head First C# ","Jennifer 
-// >			Greene, Andrew Stellman ","C Programming 
-// >				Tutorial", 645866 );
-// >
-// >			/* book 2 specification */
-// >			Book2.getValues("C# in Depth",
-// >				"Jon Skeet ", "C# Programming Tutorial ", 6426596 );
-// >
-// >			/* print Book1 info */
-// >			Console.WriteLine("--------Book1 details-------");
-// >			Book1.display();
-// >
-// >			Console.ReadLine();	
-// >			/* print Book2 info */
-// >			Console.WriteLine("--------Book2 details-------");
-// >			Book2.display();
-// >	
-// >			Console.ReadLine();
-// >		}	
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	struct Books
+	{
+		private string title;
+		private string author;
+		private string subject;
+		private int book_id;
+		public void getValues(string t, string a, string s, int id)
+		{
+			title = t;
+			author = a;
+			subject = s;
+			book_id = id;
+		}	
+		public void display()
+		{
+			Console.WriteLine("Title : {0}", title);
+			Console.WriteLine("Author : {0}", author);
+			Console.WriteLine("Subject : {0}", subject);
+			Console.WriteLine("Book_id :{0}", book_id);
+		}
+	};
+	public class testStructure
+	{
+		public static void Main(string[] args)
+		{
+			Books Book1 = new Books(); /* Declare Book1 of type Book */
+			Books Book2 = new Books(); /* Declare Book2 of type Book */
+
+			/* book 1 specification */
+			Book1.getValues("Head First C# ","Jennifer 
+			Greene, Andrew Stellman ","C Programming 
+				Tutorial", 645866 );
+
+			/* book 2 specification */
+			Book2.getValues("C# in Depth",
+				"Jon Skeet ", "C# Programming Tutorial ", 6426596 );
+
+			/* print Book1 info */
+			Console.WriteLine("--------Book1 details-------");
+			Book1.display();
+
+			Console.ReadLine();	
+			/* print Book2 info */
+			Console.WriteLine("--------Book2 details-------");
+			Book2.display();
+	
+			Console.ReadLine();
+		}	
+	}
+}
 // >```
 // >**Output:**<br>
 // > >---- Book1 Details------ <br>
