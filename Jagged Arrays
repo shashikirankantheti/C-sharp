@@ -1,0 +1,136 @@
+// >---
+// >title: Jagged Arrays in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Jagged Arrays in C# '
+// >    keywords: 'Arrays in C#,Jagged Arrays in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Jagged Arrays in C#.md
+
+
+// >###Jagged Arrays:
+// ><br>
+// >An array which contains another array is known as jagged array.
+
+// >**Declaring an jagged array:**
+
+// > >int[ ][ ] scores = new int[5][ ];
+// > > <br>
+// > >for (int i = 0; i < scores.Length; i++)
+// > > <br>
+// > >{
+// > > <br>
+// > >  scores[i] = new int[4];
+// > > <br>
+// > >}
+
+// >** Initializing a jagged array:**
+
+// > >
+// > >int[ ][ ] scores = new int[2][ ]{new int[ ]{92,93,94},new int[ ]{85,66,87,88}};
+// > >
+
+// >- scores is an array of two arrays of integers - scores[0] is an array of 3 integers and scores[1] is an array of 4 integers.
+
+
+// >**Example:**
+
+// >C# code:
+
+// >C# program to demonstrate jagged array:
+
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class MyArray
+// >	{
+// >		static void Main(string[] args)
+// >		{
+// >			/* a jagged array of 5 array of integers*/
+// >			int[ ][ ] a = new int[ ][ ] 
+// >			{ new int[] { 0, 0 }, new int[] { 1, 2 }, new int[ ] { 2, 4 }, 
+// >			new int[ ] { 3, 6 }, new int[ ] { 4, 8 } };
+// >			
+// >			int i, j;
+// >
+// >			/* output each array element's value */
+// >			for (i = 0; i < 5; i++)
+// >			{
+// >				for (j = 0; j < 2; j++)
+// >				{
+// >					Console.WriteLine("a[{0}][{1}] = {2}", i, j, a[i][j]);
+// >				}
+// >			}
+// >			Console.ReadLine();
+// >		}
+// >	}
+// >} 
+// >```
+// >**Output:**
+// > > <br>
+// > >a[0][0]: 0
+// > > <br>
+// > >a[0][1]: 0
+// > > <br>
+// > >a[1][0]: 1
+// > > <br>
+// > >a[1][1]: 2
+// > > <br>
+// > >a[2][0]: 2
+// > > <br>
+// > >a[2][1]: 4
+// > > <br>
+// > >a[3][0]: 3
+// > > <br>
+// > >a[3][1]: 6
+// > > <br>
+// > >a[4][0]: 4
+// > > <br>
+// > >a[4][1]: 8
+// > > <br>
+
+
+// >**Example 1:**
+
+// >C# Code:
+
+// >C# code to read values of array by static for outer index and inner index array values.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class Program
+// >	{
+// >		static void Main(string[] args)
+// >		{
+// >			int[][] A = new int[3][];
+// >			A[0]=new int[3]{10,20,30};
+// >			A[1] = new int[2] { 15, 23 };
+// >			A[2] = new int[4] { 1, 2, 3, 4 };
+// >			int r, c;
+// >			for (r = 0; r < A.Length; r++)
+// >			{
+// >				for (c = 0; c < A[r].Length; c++)
+// >				{
+// >					Console.Write(A[r][c] + "  ");
+// >				}
+// >				Console.WriteLine("    ");
+// >				Console.Read();
+// >			}
+// >		}
+// >	}
+// >}
+// >```
+
+// >**Output:**
+
+// > >10 	  20 	  30
+// > > <br>
+// > >15	  23 
+// > > <br>
+// > >1 	 2 	 3  	4 
+// > > <br>
