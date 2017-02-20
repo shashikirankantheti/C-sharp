@@ -89,18 +89,18 @@
 // ><br>
 // >C# program to show escape sequence characters.
 // >```
-// >using System;
-// >namespace Demo 
-// >{
-// >	class Program
-// >	{
-// >		static void Main(string[] args)
-// >		{
-// >			Console.WriteLine("Hello\tWorld\n\n");
-// >			Console.ReadLine();
-// >		}
-// >	}
-// >}
+using System;
+namespace Demo 
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("Hello\tWorld\n\n");
+			Console.ReadLine();
+		}
+	}
+}
 // >```
 // >output:
 
@@ -142,25 +142,25 @@
 // ><br>
 // >C# program to  define and using a constant.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >  class Program
-// >  {
-// >    public static void Main()
-// >    {
-// >       const double pi = 3.14159;   
-// >            
-// >       // constant declaration 
-// >       double r;
-// >       Console.Write("Enter Radius: ");
-// >       r = Convert.ToDouble(Console.ReadLine());
-// >       double areaCircle = pi * r * r;
-// >       Console.WriteLine("Radius: {0}, Area: {1}", r, areaCircle);
-// >       Console.ReadLine();
-// >    }
-// >  }
-// >}
+using System;
+namespace Demo
+{
+  class Program
+  {
+    public static void Main()
+    {
+       const double pi = 3.14159;   
+            
+       // constant declaration 
+       double r;
+       Console.Write("Enter Radius: ");
+       r = Convert.ToDouble(Console.ReadLine());
+       double areaCircle = pi * r * r;
+       Console.WriteLine("Radius: {0}, Area: {1}", r, areaCircle);
+       Console.ReadLine();
+    }
+  }
+}
 // >```
 // >**output:**
 
