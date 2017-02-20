@@ -22,34 +22,34 @@
 // >C# program that reads principle,TIme period,Rate of interest from user and find out Interest amount and Total amount to be paid.
 
 // >```
-// >using System;
-// >namespace ConsoleApplication11
-// >{
-// >	class Program
-// >	{
-// >		static void Main(string[] args)
-// >		{
-// >			int principle, time, rate;
-// >			double interest, amount;
-// >
-// >			Console.WriteLine("Enter  principle value:");
-// >			principle = Convert.ToInt32(Console.ReadLine());
-// >
-// >			Console.WriteLine("Enter  Time period:");
-// >			time = Convert.ToInt32(Console.ReadLine());
-// >
-// >			Console.WriteLine("Enter  Rate of Interest:");
-// >			rate = Convert.ToInt32(Console.ReadLine());
-// >
-// >			interest = principle * time * rate * 0.01;
-// >			amount = principle + interest;
-// >			Console.WriteLine("Interest Amount is: {0}", interest);
-// >			Console.Write("Total Amount is: {0}", amount);
-// >
-// >			Console.ReadLine();
-// >		}	
-// >	}
-// >}
+using System;
+namespace ConsoleApplication11
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int principle, time, rate;
+			double interest, amount;
+
+			Console.WriteLine("Enter  principle value:");
+			principle = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Enter  Time period:");
+			time = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Enter  Rate of Interest:");
+			rate = Convert.ToInt32(Console.ReadLine());
+
+			interest = principle * time * rate * 0.01;
+			amount = principle + interest;
+			Console.WriteLine("Interest Amount is: {0}", interest);
+			Console.Write("Total Amount is: {0}", amount);
+
+			Console.ReadLine();
+		}	
+	}
+}
 // >```
 // >**Output:**
         
