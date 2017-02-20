@@ -13,8 +13,8 @@
    -- [Iterative Programming Constructs](https://github.com/shashikirankantheti/C-sharp/blob/master/Iterative%20Programming%20Constructs)<br>
  - [Arrays](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays)<br>
    -- [Arrays According to Physical size](https://github.com/shashikirankantheti/C-sharp/blob/master/Arrays%20According%20to%20Physical%20Size)<br>
-      -- Single dimensional array<br>
-      -- Multi dimensional array<br>
+       --- Single dimensional array<br>
+       --- Multi dimensional array<br>
    -- Arrays according to memory size<br>
    -- Arrays according to Nature of Physical size<br>
    -- Jagged arrau<br>
