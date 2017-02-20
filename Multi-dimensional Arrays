@@ -51,62 +51,62 @@
 // >C# program to read numbers into multi-dimensional array ,display them and find sum of numbers and even numbers in the array.
 
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	class Program
-// >	{
-// >		public static void Main(string[] args)
-// >		{
-// >			int r,c,i,j;
-// >			int sum = 0;
-// >			Console.Write("Enter the row size:");
-// >			r = Convert.ToInt32(Console.ReadLine());
-// >			Console.Write("enter the column size:");
-// >			c = Convert.ToInt32(Console.ReadLine());
-// >			/* To read elements in to array*/
-// >			int[,] A = new int[r, c];
-// >			Console.WriteLine("Enter elements into array:");
-// >			for (i = 0; i < r; i++)
-// >			{
-// >				for (j = 0; j < c; j++)
-// >				{
-// >					A[i, j] =Convert.ToInt32(Console.ReadLine());
-// >				}
-// >			}
-// >			/* To display elements in array*/
-// >			Console.WriteLine("Elements in array are:");
-// >			for (i = 0; i < r; i++)
-// >			{
-// >				for (j = 0; j < c; j++)
-// >				{
-// >					Console.WriteLine(A[i, j] + " ");
-// >				}
-// >			}
-// >			/* To find sum of elements in array*/
-// >			for (i = 0; i < r; i++)
-// >			{
-// >				for (j = 0; j < c; j++)
-// >				{
-// >					sum = sum + A[i, j];
-// >				}
-// >			}
-// >			Console.WriteLine("Sum of numbers in array are:" +sum);
-// >			/*To find sum of even numbers in array*/
-// >			for (i = 0; i < r; i++)
-// >			{
-// >				for (j = 0; j < c; j++)
-// >				{
-// >					if (A[i, j] % 2 == 0)
-// >					{
-// >						Console.WriteLine("Even number in array:" + A[i,j]);
-// >					}
-// >				}
-// >			}
-// >			Console.ReadLine();
-// >		}
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int r,c,i,j;
+			int sum = 0;
+			Console.Write("Enter the row size:");
+			r = Convert.ToInt32(Console.ReadLine());
+			Console.Write("enter the column size:");
+			c = Convert.ToInt32(Console.ReadLine());
+			/* To read elements in to array*/
+			int[,] A = new int[r, c];
+			Console.WriteLine("Enter elements into array:");
+			for (i = 0; i < r; i++)
+			{
+				for (j = 0; j < c; j++)
+				{
+					A[i, j] =Convert.ToInt32(Console.ReadLine());
+				}
+			}
+			/* To display elements in array*/
+			Console.WriteLine("Elements in array are:");
+			for (i = 0; i < r; i++)
+			{
+				for (j = 0; j < c; j++)
+				{
+					Console.WriteLine(A[i, j] + " ");
+				}
+			}
+			/* To find sum of elements in array*/
+			for (i = 0; i < r; i++)
+			{
+				for (j = 0; j < c; j++)
+				{
+					sum = sum + A[i, j];
+				}
+			}
+			Console.WriteLine("Sum of numbers in array are:" +sum);
+			/*To find sum of even numbers in array*/
+			for (i = 0; i < r; i++)
+			{
+				for (j = 0; j < c; j++)
+				{
+					if (A[i, j] % 2 == 0)
+					{
+						Console.WriteLine("Even number in array:" + A[i,j]);
+					}
+				}
+			}
+			Console.ReadLine();
+		}
+	}
+}
 // >```
 // >**Output:**
 // > >
