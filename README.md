@@ -32,5 +32,5 @@
    4.[Pass by param](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20param%20Parameter)<br>
    
    
-2. **Object Oriented Programming**<br>
+2.**Object Oriented Programming**<br>
  
