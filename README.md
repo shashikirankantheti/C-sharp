@@ -25,7 +25,7 @@
  - [Structures](https://github.com/shashikirankantheti/C-sharp/blob/master/Structures)<br>
  - [Enumerations](https://github.com/shashikirankantheti/C-sharp/blob/master/Enumerations)<br>
  - [Parameters](https://github.com/shashikirankantheti/C-sharp/blob/master/parameters)<br>
-   -- Pass by Value<br>
+   -- [Pass by Value](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20value%20Parameter)<br>
    -- Pass by reference<br>
    -- Pass by out<br>
    -- Pass by param<br>
