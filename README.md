@@ -24,7 +24,7 @@
    -- [Un-Boxing](https://github.com/shashikirankantheti/C-sharp/blob/master/UN-Boxing)<br>
  - [Structures](https://github.com/shashikirankantheti/C-sharp/blob/master/Structures)<br>
  - [Enumerations](https://github.com/shashikirankantheti/C-sharp/blob/master/Enumerations)<br>
- - Parameters<br>
+ - [Parameters](https://github.com/shashikirankantheti/C-sharp/blob/master/parameters)<br>
    -- Pass by Value<br>
    -- Pass by reference<br>
    -- Pass by out<br>
