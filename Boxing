@@ -30,29 +30,29 @@
 // >C# COde: <br>
 // >C# Program that converts an integer variable i to an object o by using boxing. Then, the value stored in the variable i is changed from 143 to 341. This shows that the original value type and the boxed object use separate memory locations, and therefore can store different values.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >	class TestBoxing
-// >	{
-// >		public static void Main()
-// >		{
-// >			int i = 143;
-// >
-// >			// Boxing copies the value of i into object o.
-// >
-// >			object o = i;
-// >
-// >			// Change the value of i.
-// >			i = 341;
-// >
-// >			// The change in i does not effect the value stored in o.
-// >			Console.WriteLine("The value-type value = {0}", i);
-// >			Console.WriteLine("The object-type value = {0}", o);
-// >			Console.Read();
-// >		}
-// >	}
-// >}
+using System;
+namespace Demo
+{
+	class TestBoxing
+	{
+		public static void Main()
+		{
+			int i = 143;
+
+			// Boxing copies the value of i into object o.
+
+			object o = i;
+
+			// Change the value of i.
+			i = 341;
+
+			// The change in i does not effect the value stored in o.
+			Console.WriteLine("The value-type value = {0}", i);
+			Console.WriteLine("The object-type value = {0}", o);
+			Console.Read();
+		}
+	}
+}
 // >```
 // >**Output:**<br>
 // > >The value-type value = 341 <br>
