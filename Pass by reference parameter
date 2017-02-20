@@ -26,44 +26,44 @@
 
 // >C# Program to demonstrate pass by reference(ref) by swapping of two numbers.
 // >```
-// >using System;
-// >namespace Demo
-// >{
-// >    class Program
-// >    {
-// >        public void swap(ref int x, ref int y)
-// >        {
-// >            int temp;
-// >
-// >            temp = x; /* save the value of x */
-// >            x = y;    /* put y into x */
-// >            y = temp; /* put temp into y */
-// >        }
-// >
-// >        static void Main(string[] args)
-// >        {
-// >            Program n = new Program();
-// >
-// >            /* local variable definition */
-// >            Console.Write("Enter the first value:");
-// >            int a = Convert.ToInt32(Console.ReadLine());
-// >            Console.Write("Enter the second value:");
-// >            int b =Convert.ToInt32(Console.ReadLine());
-// >
-// >            Console.WriteLine("Before swap, first value: {0}", a);
-// >            Console.WriteLine("Before swap, second value: {0}", b);
-// >
-// >            /* calling a function to swap the values */
-// >            n.swap(ref a, ref b);
-// >
-// >            Console.WriteLine("After swap, first value: {0}", a);
-// >            Console.WriteLine("After swap, second value: {0}", b);
-// >
-// >            Console.ReadLine();
-// >
-// >        }
-// >    }
-// >}  
+using System;
+namespace Demo
+{
+    class Program
+    {
+        public void swap(ref int x, ref int y)
+        {
+            int temp;
+
+            temp = x; /* save the value of x */
+            x = y;    /* put y into x */
+            y = temp; /* put temp into y */
+        }
+
+        static void Main(string[] args)
+        {
+            Program n = new Program();
+
+            /* local variable definition */
+            Console.Write("Enter the first value:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the second value:");
+            int b =Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Before swap, first value: {0}", a);
+            Console.WriteLine("Before swap, second value: {0}", b);
+
+            /* calling a function to swap the values */
+            n.swap(ref a, ref b);
+
+            Console.WriteLine("After swap, first value: {0}", a);
+            Console.WriteLine("After swap, second value: {0}", b);
+
+            Console.ReadLine();
+
+        }
+    }
+}  
 // >```
 // >**Output:**
 
