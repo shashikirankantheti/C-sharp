@@ -1,0 +1,74 @@
+// >---
+// >title: Pass by param in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'pass by param in C#. '
+// >    keywords: 'pass by param in C#,pass by param'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_pass by param in C#.md
+
+// >### Pass by param:
+
+// >- params parameter is a very useful feature in C#. It is used when we don't know the number of parameters will be passed to the called method.
+// >- Param can accept multiple values or "params" should be a single dimensional or a jagged array.
+// >- The params keyword lets you specify a method parameter that takes an argument where the number of arguments is variable.
+// >- No additional parameters are permitted after the params keyword in a method declaration, and only one params keyword is permitted in a method declaration.
+
+// >**Example:**
+
+// >C# Code:
+
+// >C# program to demonstrate pass by params.
+
+// >```
+// >using System;
+// >namespace param_parameter
+// >{
+// >    class Program
+// >    {
+// >        class ss
+// >        {
+// >            public void print(params int[] numbers)
+// >            {
+// >                foreach (int x in numbers)
+// >                {
+// >                    Console.WriteLine(" " + x);
+// >                }
+// >            }
+// >        }
+// >        static void Main(string[] args)
+// >        {
+// >            int[] numbers = { 1, 2, 3, 4, 5, 6 };
+// >            int a = 10, b = 20, c = 30, d = 40;
+// >
+// >            ss obj = new ss();
+// >
+// >            obj.print(a, b, c, d);
+// >            Console.WriteLine("---------");
+// >            obj.print(numbers);
+// >
+// >            Console.ReadLine();
+// >        }
+// >    }
+// >}
+// >```
+
+// >**Output:**
+
+// > > 10 <br>
+// > > 20 <br>
+// > > 30 <br>
+// > > 40 <br>
+// > > **--------** <br>
+// > >1 <br>
+// > >2 <br>
+// > >3 <br>
+// > >4 <br>
+// > >5 <br>
+// > >6 <br>
+
+
+ 
