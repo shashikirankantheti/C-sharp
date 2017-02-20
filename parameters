@@ -1,0 +1,31 @@
+// >---
+// >title: parameters in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'parameters in C#. '
+// >    keywords: 'parameters in C# , parameters'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_ parameters.md 
+
+// >### C# Parameters:
+
+// >- In C#, arguments can be passed to parameters either by value or by reference.
+// >- Passing by reference enables function members, methods, properties, indexers, operators, and constructors to change the value of the parameters and have that change persist in the calling environment. 
+// >- To pass a parameter by reference, use the ref or out keyword. 
+
+// >**Syntax:**
+// >>
+// >>[ Modifiers ] DataType   ParameterName
+// >>
+
+
+// >- There are four different ways of passing parameters to a method in C#. The four different types of parameters are:
+
+// >1.Pass by Value .<br>
+// >2.Pass by Reference. <br>
+// >3.Pass by Out. <br>
+// >4.Pass by Params. <br>
+ 
