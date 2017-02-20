@@ -1,0 +1,99 @@
+// >---
+// >title: Enumerations in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'If you have a number of constants that are logically related to each other, then you can group together these constants in an enumeration. '
+// >    keywords: 'Enumerations in C#,Enumerations'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Enumerations.md
+
+
+// >### Enumerations:
+// >- An enumeration is a set of named integer constants. An enumerated type is declared using the enum keyword.
+// >- C# enumerations are value data type. In other words, enumeration contains its own values and cannot inherit or cannot pass inheritance.
+// >- If you have a number of constants that are logically related to each other, then you can group together these constants in an enumeration.
+
+// >**Syntax:**<br>
+// > >enum<enum_name> <br>
+// > >{ <br>
+// > >  enumeration list <br>
+// > >};
+
+// >-->The enum_name specifies the enumeration type name.
+
+// >-->The enumeration list is a comma-separated list of identifiers.
+
+// >Each of the symbols in the enumeration list stands for an integer value, one greater than the symbol that precedes it. By default, the value of the first enumeration symbol is 0. <br>For example:
+
+// > // >>enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
+// > // >> <br>
+
+
+// >**Example:**<br>
+// >C# Code:
+
+// >C# program to demonstrate simple enumeration.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >    class Enum
+// >    {
+// >        enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
+// >
+// >        static void Main(string[ ] args)
+// >        {
+// >            int WeekdayStart = (int)Days.Mon;
+// >            int WeekdayEnd = (int)Days.Sat;
+// >            Console.WriteLine("Monday: {0}", WeekdayStart);
+// >            Console.WriteLine("Saturday: {0}", WeekdayEnd);
+// >            Console.ReadLine();
+// >        }
+// >    }
+// >}
+// >```
+// >**Output:** <br>
+// > // >>Monday:1 <br>
+// > // >>Saturday:6 <br> 
+
+
+
+// >*** How an int value cast to enum:***
+
+// >> MyEnum myenum = (MyEnum)intvalue;
+
+
+// >** Example:**
+
+// >C# Code:
+
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >    class Enum
+// >    {
+// >        enum Days
+// >        {
+// >            Sunday = 1,
+// >            TuesDay = 2,
+// >            Wednesday = 3
+// >        }
+// >     
+// >        static void Main(string[] args)
+// >        {
+// >            Days day = (Days)3;
+// >            Console.WriteLine("day: {0}", day);
+// >            Console.ReadLine();
+// >        }
+// >    }
+// >}
+// >```
+// >**Output:** <br>
+// > > day: Wednesday
+
+
+
