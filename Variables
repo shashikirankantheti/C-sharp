@@ -25,19 +25,19 @@
 // > <br>
 // > C# program to declare an integer variable,assign it a value,and then assign it a new value.
 // > ```
-// >using System;
-// >namespace Demos
-// >{
-// >	class Example
-// >	{
-// >		public static void Main()
-// >		{
-// >			int x=1; //x holds the value 1
-// >			 x=2;  // now x holds the value 2
-// >			 Console.WriteLine( x);
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class Example
+	{
+		public static void Main()
+		{
+			int x=1; //x holds the value 1
+			 x=2;  // now x holds the value 2
+			 Console.WriteLine( x);
+		}
+	}
+}
 // >```
 // >output:
 	
@@ -58,20 +58,20 @@
 // >C# code<br>
 // >C# program  to print different data type value on selected order.
 // >```
-// >using System;
-// >namespace Demos
-// >{
-// >	class Example
-// >	{
-// >		public static void Main()
-// >		{
-// >		 int answer=42;
-// >		 string greeting="Hallo World:";
-// >		 double bignumber=1e100;
-// >		 Console.Write("{0} {1} {2}",answer,greeting,bignumber);
-// >		}
-// >	}
-// >}
+using System;
+namespace Demos
+{
+	class Example
+	{
+		public static void Main()
+		{
+		 int answer=42;
+		 string greeting="Hallo World:";
+		 double bignumber=1e100;
+		 Console.Write("{0} {1} {2}",answer,greeting,bignumber);
+		}
+	}
+}
 // >```
 // >output:
 
