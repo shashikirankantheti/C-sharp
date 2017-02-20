@@ -24,36 +24,36 @@
 // >C# program to demonstrate pass by params.
 
 // >```
-// >using System;
-// >namespace param_parameter
-// >{
-// >    class Program
-// >    {
-// >        class ss
-// >        {
-// >            public void print(params int[] numbers)
-// >            {
-// >                foreach (int x in numbers)
-// >                {
-// >                    Console.WriteLine(" " + x);
-// >                }
-// >            }
-// >        }
-// >        static void Main(string[] args)
-// >        {
-// >            int[] numbers = { 1, 2, 3, 4, 5, 6 };
-// >            int a = 10, b = 20, c = 30, d = 40;
-// >
-// >            ss obj = new ss();
-// >
-// >            obj.print(a, b, c, d);
-// >            Console.WriteLine("---------");
-// >            obj.print(numbers);
-// >
-// >            Console.ReadLine();
-// >        }
-// >    }
-// >}
+using System;
+namespace param_parameter
+{
+    class Program
+    {
+        class ss
+        {
+            public void print(params int[] numbers)
+            {
+                foreach (int x in numbers)
+                {
+                    Console.WriteLine(" " + x);
+                }
+            }
+        }
+        static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 4, 5, 6 };
+            int a = 10, b = 20, c = 30, d = 40;
+
+            ss obj = new ss();
+
+            obj.print(a, b, c, d);
+            Console.WriteLine("---------");
+            obj.print(numbers);
+
+            Console.ReadLine();
+        }
+    }
+}
 // >```
 
 // >**Output:**
