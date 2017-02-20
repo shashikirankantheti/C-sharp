@@ -8,9 +8,26 @@
  - [Constants](https://github.com/shashikirankantheti/C-sharp/blob/master/Constants)
  - [DataTypes](https://github.com/shashikirankantheti/C-sharp/blob/master/Data%20Types)
  - Programming Constructs
+   -- Sequential Programming Constructs
+   -- selection Programming Constructs
+   -- Iterative Programming Constructs
  - Arrays
+   -- Arrays According to Physical size
+      -- Single dimensional array
+      -- Multi dimensional array
+   -- Arrays according to memory size
+   -- Arrays according to Nature of Physical size
+   -- Jagged arrau
+   -- Array Class
  - Boxing and Un-Boxing
+   -- Boxing
+   -- Un-Boxing
  - Structures
  - Enumerations
- - Parametershh
+ - Parameters
+   -- Pass by Value
+   -- Pass by reference
+   -- Pass by out
+   -- Pass by param
+ - Object Oriented Programming
  
