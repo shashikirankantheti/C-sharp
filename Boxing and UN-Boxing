@@ -1,0 +1,23 @@
+// >---
+// >title: Boxing and UN-Boxing in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Boxing and UN-Boxing in C#. '
+// >    keywords: 'Boxing in C#,UN-Boxing in C#,Boxing,UN-Boxing'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Boxing and UN-Boxing.md
+
+
+// >** Boxing:**
+
+// >- Boxing is an implicit conversion of a value type to the type object or to any interface type implemented by this value type. - Boxing a value type allocates an object instance on the heap and copies the value into the new object.
+
+// >**UN-Boxing:**
+
+// >- Unboxing is an explicit conversion from the type object to a value type or from an interface type to a value type that implements the interface.
+// >- An unboxing operation consists of:
+// >- Checking the object instance to make sure that it is a boxed value of the given value type.
+// >- Copying the value from the instance into the value-type variable.
