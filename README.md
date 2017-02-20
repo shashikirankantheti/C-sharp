@@ -1,5 +1,5 @@
 # **C#**
-1.C# Basics
+1.**C# Basics**
  - [Introduction](https://github.com/shashikirankantheti/C-sharp/blob/master/Introduction)
  - [Comments](https://github.com/shashikirankantheti/C-sharp/blob/master/Comments)
  - [Print to screen](https://github.com/shashikirankantheti/C-sharp/blob/master/Print%20to%20screen)
@@ -28,6 +28,6 @@
    -- [Pass by Value](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20value%20Parameter)<br>
    -- [Pass by reference](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20reference%20parameter)<br>
    -- [Pass by out](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20out%20parameter)<br>
-   -- Pass by param<br>
- - Object Oriented Programming<br>
+   -- [Pass by param](https://github.com/shashikirankantheti/C-sharp/blob/master/Pass%20by%20param%20Parameter)<br>
+ 2. **Object Oriented Programming**<br>
  
