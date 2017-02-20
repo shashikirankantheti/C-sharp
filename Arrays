@@ -1,0 +1,177 @@
+// >---
+// >title: Arrays in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Arrays is that stores a fixed-size sequential collection of elements of the same type. '
+// >    keywords: 'Arrays in C#,Arrays'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Arrays.md
+// >
+// >#Arrays
+// >
+// >1.Array is a user defined data-type and is a reference type it is used to store more than one value with same name and with same data type.<br>
+// >2.In other words array is a set of similar data-types.<br>
+// >3.The values present in an array identified by using index value.<br>
+// >4.Always index start with **0** its also know as **lower bound** of an array and end with **size-1**  know as **upper bound** of an array.
+
+// >###Declaring Arrays:
+
+// >**syntax:**
+
+// >>datatype[ ]arrayName;
+
+// >- datatype is used to specify the type of elements in the array.
+// >
+// >- [ ] specifies the rank of the array. The rank specifies the size of the array.
+
+// >- arrayName specifies the name of the array.
+
+// >**Example:**
+// >
+// >>double[ ] balance;
+// >
+// >###Initializing an Array:
+// >Array is a reference type, so you need to use the new keyword to create an instance of the array.
+
+// >**Example:**
+
+// >>double[ ] balance = new double[11];
+
+// >###Inserting Values to an Array:
+// >- You can assign values to individual array elements, by using the index number, like:
+
+// >>double[ ] balance = new double[11];
+// >> <br>
+// >>balance[0] = 4600.0;
+
+// >- You can assign values to the array at the time of declaration, as shown:
+
+// >>double[ ] balance = { 2340.0, 4523.69, 3421.0};
+
+// >- You can also create and initialize an array:
+
+// >>int [ ] marks = new int[5]  { 99,  98, 97, 96, 95};
+
+// >- You may also omit the size of the array:
+
+// >>int [ ] marks = new int[ ]  { 99,  98, 97, 96, 95};
+
+// >- You can copy an array variable into another target array variable. In such case, both the target and source point to the same memory location:
+
+// >>int [ ] marks = new int[ ]  { 99,  98, 97, 96, 95};
+// >> <br>
+// >>int[ ] score = marks;
+
+// >- When you create an array, C# compiler implicitly initializes each array element to a default value depending on the array type. For example, for an int array all elements are initialized to 0.
+
+// >###Getting Array Elements:
+
+// >An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. 
+
+// >**Example:**
+
+// >>double salary = balance[9];
+
+// >**Program:**
+
+// >C# Code:<br>
+// >C# program to initialize values of array and display values from array.
+// >```
+// >	using System;
+// >	namespace Demo
+// >	{
+// >		class Program
+// >		{
+// >			public static void Main(string[] args)
+// >			{
+// >				int[] n = new int[4]; /* n is an array of 10 integers */
+// >				int i, j;
+// >
+// >				/* initialize elements of array n */
+// >				for (i = 0; i < 4; i++)
+// >				{
+// >					n[i] = i + 10;
+// >				}
+// >
+// >				/* output each array element's value */
+// >				for (j = 0; j < 4; j++)
+// >				{
+// >					Console.WriteLine("Element[{0}] = {1}", j, n[j]);
+// >				}
+// >				Console.ReadKey();
+// >			}
+// >		}
+// >	}
+// >```
+// >**Output:**
+// > >Element[0] = 10
+// > > <br>
+// > >Element[1] = 11
+// > > <br>
+// > >Element[2] = 12
+// > > <br>
+// > >Element[3] = 13
+
+// >###Using the foreach Loop:
+
+// >You can also use a foreach statement to iterate through an array.
+
+// >C# Code:
+// >```
+// >	using System;
+// >	namespace Demo
+// >	{
+// >		class Program
+// >		{
+// >			public static void Main(string[] args)
+// >			{
+// >				int[] n = new int[4]; /* n is an array of 10 integers */
+// >
+// >				/* initialize elements of array n */
+// >				for (int i = 0; i < 4; i++)
+// >				{
+// >					n[i] = i + 10;
+// >				}
+// >
+// >				/* output each array element's value */
+// >				foreach (int j in n)
+// >				{
+// >					int i = j - 10;
+// >					Console.WriteLine("Element[{0}] = {1}", i, j);
+// >
+// >				}
+// >				Console.ReadKey();
+// >			}
+// >		}
+// >	}
+// >```
+// >**Output:**
+// > >Element[0] = 10
+// > > <br>
+// > >Element[1] = 11
+// > > <br>
+// > >Element[2] = 12
+// > > <br>
+// > >Element[3] = 13
+
+// >###Types of Arrays: 
+// >1.According to physical size:
+// >	- Single dimensional array
+// >	- Multi-dimensional array
+// >
+// >2.According to Memory size:
+// >	- Normal array
+// >	- Huge array
+// >
+// >3.According to Nature of physical size:
+// >	- Static array
+// >	- Dynamic array
+// >
+// >4.Jagged array
+// >
+// >**Note:**	
+// >C# .Net supports Special array know as **Jagged array**[means array in arrays].
+
