@@ -1,0 +1,19 @@
+// >---
+// >title: Arrays According to Physical Size in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Arrays According to Physical Size in C# '
+// >    keywords: 'Arrays in C#,Arrays According to Physical Size in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Arrays According to Physical Size.md
+
+
+
+// >###According to physical size:
+
+// >Arrays according to physical size are characterized into two types:
+// >- Single dimensional array
+// >- Multi-dimensional array
