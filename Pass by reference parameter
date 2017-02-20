@@ -1,0 +1,76 @@
+// >---
+// >title: pass by reference parameter in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'pass by reference in C#. '
+// >    keywords: 'pass by ref in C#,pass by ref,pass by reference parameter in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_pass by ref in C#.md
+
+// >### Pass by reference:
+
+// >- “ref” parameters are input/output parameters meaning they can be used for passing a value to a function as well as to get back a value from a function. 
+// >- We create a “ref” parameter by preceding the parameter data type with the ref modifier.
+// >- When ever a “ref” parameter is passed a reference is passed to the function. <br>
+// > **(or)**
+// >- A reference parameter is a reference to a memory location of a variable.
+// >- When you pass parameters by reference, unlike value parameters, a new storage location is not created for these parameters. 
+// >- The reference parameters represent the same memory location as the actual parameters that are supplied to the method.
+
+// >**Example:**
+
+// >C# Code:
+
+// >C# Program to demonstrate pass by reference(ref) by swapping of two numbers.
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >    class Program
+// >    {
+// >        public void swap(ref int x, ref int y)
+// >        {
+// >            int temp;
+// >
+// >            temp = x; /* save the value of x */
+// >            x = y;    /* put y into x */
+// >            y = temp; /* put temp into y */
+// >        }
+// >
+// >        static void Main(string[] args)
+// >        {
+// >            Program n = new Program();
+// >
+// >            /* local variable definition */
+// >            Console.Write("Enter the first value:");
+// >            int a = Convert.ToInt32(Console.ReadLine());
+// >            Console.Write("Enter the second value:");
+// >            int b =Convert.ToInt32(Console.ReadLine());
+// >
+// >            Console.WriteLine("Before swap, first value: {0}", a);
+// >            Console.WriteLine("Before swap, second value: {0}", b);
+// >
+// >            /* calling a function to swap the values */
+// >            n.swap(ref a, ref b);
+// >
+// >            Console.WriteLine("After swap, first value: {0}", a);
+// >            Console.WriteLine("After swap, second value: {0}", b);
+// >
+// >            Console.ReadLine();
+// >
+// >        }
+// >    }
+// >}  
+// >```
+// >**Output:**
+
+// > > Enter the first value: 26 <br>
+// > > Enter the second value: 6 <br>
+// > > Before swap, first value: 26 <br>
+// > > Before swap, second value: 6 <br>
+// > > After swap, first value: 6 <br>
+// > > After swap, second value: 26 <br>
+
