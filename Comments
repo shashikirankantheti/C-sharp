@@ -43,19 +43,19 @@
 // >A simple C# program to Display some text on Console.
 
 // >```
-// >using System;
-// >namespace Demos
-// > {
-// >	class Comments
-// >	{
-// >    	public static void Main()
-// >		{
-// >	    	Console.Write("Welcome to C# programming");
-// >			// shoes the welcome text on the screen 
-// >			Console.WriteLine(" I am  C# programmer");
-// >	    }
-// >	}
-// >}
+using System;
+namespace Demos
+ {
+	class Comments
+	{
+    	public static void Main()
+		{
+	    	Console.Write("Welcome to C# programming");
+			// shoes the welcome text on the screen 
+			Console.WriteLine(" I am  C# programmer");
+	    }
+	}
+}
 	
 // >```
 // >output:
@@ -68,21 +68,21 @@
 // >A simple C# program to Display some text on Console.
 
 // >```
-// >using system;
-// >namespace Demos
-// >{
-// >	class Comments
-// >	{
-// >		public static void Main()
-// >		{
-// >			Console.WriteLine("Welcome to C# programming.");
-// >			/*C# is a simple, modern, general-purpose,
-// >			object-oriented programming language 
-// >			developed by Microsoft within its
-// >			.NET initiative led by Anders Heisenberg.*/
-// >		}
-// >	}
-// >}
+using system;
+namespace Demos
+{
+	class Comments
+	{
+		public static void Main()
+		{
+			Console.WriteLine("Welcome to C# programming.");
+			/*C# is a simple, modern, general-purpose,
+			object-oriented programming language 
+			developed by Microsoft within its
+			.NET initiative led by Anders Heisenberg.*/
+		}
+	}
+}
 // >```
 // >output:
 	
