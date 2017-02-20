@@ -1,0 +1,144 @@
+// >---
+// >title: Multi-dimensional arrays in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Arrays can have more than one dimension,these arrays-of-arrays are called multidimensional arrays.  '
+// >    keywords: 'Arrays in C#,Multi-dimensional arrays in C#'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Multi-dimensional arrays.md
+
+
+// >###Multi-dimensional arrays:
+
+// >Arrays can have more than one dimension; these arrays-of-arrays are called multidimensional arrays. They are very similar to standard arrays with the exception that they have multiple sets of square brackets after the array identifier.
+ 
+// >The most common kind of multidimensional array is the two-dimensional array. A two dimensional array can be thought of as a grid of rows and columns.
+
+// >An Array Which has Multiple rows and Multiple Columns are known as Multidimensional array.
+
+// >**Declaring multidimensional array:**
+// > >string[,] names = new string[4, 4];
+// > > <br>
+// > >int[,] numbers = new int[3, 4];
+ 
+ 
+// >**Initializing Multidimensional array :**
+// > >int[,] numbers = new int[3, 2] {{1,2}, {3,4}, {5,6}};
+// > > <br>
+// > >string[,] names = new string[2, 2] {{"shashi", "kiran"}, {"sai", "kishore"}};
+ 
+// >We can omit the size of the array,like this:
+ 
+// > >int[,] numbers = new int[,] { { 1, 2 }, { 3, 4 }, { 5, 6 
+// >  };
+// > > <br>
+// > >string[,] names = new string[,] {{"shashi", "kiran"}, {"sai", "kishore"}};
+ 
+// >We can also omit the new operator if  initialized array like this:
+ 
+// > >int[,] numbers = {{1,2}, {3,4}, {5,6}};
+// > > <br>
+// > >string[,] names = {{"shashi", "kiran"}, {"sai", "kishore"}};
+
+
+// >**Example:**
+
+// >C# Code:
+
+// >C# program to read numbers into multi-dimensional array ,display them and find sum of numbers and even numbers in the array.
+
+// >```
+// >using System;
+// >namespace Demo
+// >{
+// >	class Program
+// >	{
+// >		public static void Main(string[] args)
+// >		{
+// >			int r,c,i,j;
+// >			int sum = 0;
+// >			Console.Write("Enter the row size:");
+// >			r = Convert.ToInt32(Console.ReadLine());
+// >			Console.Write("enter the column size:");
+// >			c = Convert.ToInt32(Console.ReadLine());
+// >			/* To read elements in to array*/
+// >			int[,] A = new int[r, c];
+// >			Console.WriteLine("Enter elements into array:");
+// >			for (i = 0; i < r; i++)
+// >			{
+// >				for (j = 0; j < c; j++)
+// >				{
+// >					A[i, j] =Convert.ToInt32(Console.ReadLine());
+// >				}
+// >			}
+// >			/* To display elements in array*/
+// >			Console.WriteLine("Elements in array are:");
+// >			for (i = 0; i < r; i++)
+// >			{
+// >				for (j = 0; j < c; j++)
+// >				{
+// >					Console.WriteLine(A[i, j] + " ");
+// >				}
+// >			}
+// >			/* To find sum of elements in array*/
+// >			for (i = 0; i < r; i++)
+// >			{
+// >				for (j = 0; j < c; j++)
+// >				{
+// >					sum = sum + A[i, j];
+// >				}
+// >			}
+// >			Console.WriteLine("Sum of numbers in array are:" +sum);
+// >			/*To find sum of even numbers in array*/
+// >			for (i = 0; i < r; i++)
+// >			{
+// >				for (j = 0; j < c; j++)
+// >				{
+// >					if (A[i, j] % 2 == 0)
+// >					{
+// >						Console.WriteLine("Even number in array:" + A[i,j]);
+// >					}
+// >				}
+// >			}
+// >			Console.ReadLine();
+// >		}
+// >	}
+// >}
+// >```
+// >**Output:**
+// > >
+// > >Enter the row size:2
+// > > <br>
+// > >Enter the column size:2
+// > > <br>
+// > >Enter elements into array:
+// > > <br>
+// > >1
+// > > <br>
+// > >2
+// > > <br>
+// > >3
+// > > <br>
+// > >4
+// > > <br>
+// > >Elements in array are:
+// > > <br>
+// > >1
+// > > <br>
+// > >2
+// > > <br>
+// > >3
+// > > <br>
+// > >4
+// > > <br>
+// > >Sum of numbers in array are:10
+// > > <br>
+// > >Even number in array:2
+// > > <br>
+// > >Even number in array:4
+// > > <br>
+
+
