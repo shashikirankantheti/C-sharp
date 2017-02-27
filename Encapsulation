@@ -1,0 +1,287 @@
+// >---
+// >title: Encapsulation in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Encapsulation is defined as hiding irrelevant data from the user. '
+// >    keywords: 'Object Oriented Programming Modules in C#,Encapsulation'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Encapsulation.md
+
+// >###Encapsulation:
+
+// >- Encapsulation is defined 'as the process of enclosing one or more items within a physical or logical package'. Encapsulation, in object oriented programming methodology, prevents access to implementation details.
+
+// >- Abstraction and encapsulation are related features in object oriented programming. Abstraction allows making relevant information visible and encapsulation enables a programmer to implement the desired level of abstraction.
+
+// >- Encapsulation is implemented by using access specifiers. An access specifier defines the scope and visibility of a class member.
+
+// >- C# supports the following access specifiers:
+
+// >	1.Public<br>
+// >	2.Private<br>
+// >	3.Protected<br>
+// >	4.Internal<br>
+// >	5.Protected internal<br>
+
+
+// >#### 1.Public Access Specifier:
+// >Public access specifier allows a class to expose its member variables and member functions to other functions and objects. Any public member can be accessed from outside the class.
+
+// >**Example:**
+
+// >C# code:
+
+// >A C# program to find area of a rectangle.
+// >
+// >```
+using System;
+namespace RectangleApplication
+{
+    class Rectangle
+    {
+        //member variables
+        public double length;
+        public double width;
+
+        public double GetArea()
+        {
+            return length * width;
+        }
+        public void Display()
+        {
+            Console.WriteLine("Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
+            Console.WriteLine("Area: {0}", GetArea());
+        }
+    }//end class Rectangle
+
+    class ExecuteRectangle
+    {
+        static void Main(string[] args)
+        {
+            Rectangle k = new Rectangle();
+            Console.WriteLine("Enter the lenght of rectangle:");
+            k.length =Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the Width of rectangle:");
+            k.width = Convert.ToDouble(Console.ReadLine());
+            k.Display();
+            Console.ReadLine();
+        }
+    }
+}
+// >```
+// >**Output:**
+// >
+// > >Length: 6.5 <br>
+// > >Width: 4.2 <br>
+// > >Area: 27.3 <br>
+
+// >####2.Private Access Specifier:
+// >- The private keyword is a member access modifier. Private access is the least permissive access level. Private members are accessible only within the body of the class or the struct in which they are declared.
+// >- You can store or retrieve value from private access modifiers using get set property. You will learn more about get set property
+
+// >**Example:**
+
+// >C# code:
+
+// >A C# program to find Tax amount of a Employe.
+// >```
+using System;
+namespace EmployeeDemo
+{
+    class Employee
+    {
+        private string name;
+        private double salary;
+
+        public void Acceptdetails()
+        {
+            Console.WriteLine("Enter the name of employee:");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter the salary of employee:");
+            salary = Convert.ToDouble(Console.ReadLine());
+        }
+        public double GetTax()
+        {
+            return salary * (9*0.01);
+        }
+        public void DisplayDEtails()
+        {
+            Console.WriteLine("Employee name:{0}", name);
+            Console.WriteLine("{0} Salary:{1}", name, salary);
+            Console.WriteLine("{0} Tax Amount:{1}", name, GetTax());
+        }
+        class Employee1
+        {
+            static void Main(string[] args)
+            {
+                Employee e = new Employee();
+                e.Acceptdetails();
+                e.DisplayDEtails();
+                Console.ReadLine();
+
+            }
+        }
+    }
+}
+// >```
+// >**Output:**
+
+// > >Enter the name of employee: <br>
+// > >kkk<br>
+// >  >Enter the salary of employee:<br>
+// > >15000<br>
+// > >-------------------------<br>
+// > >Employee name:kkk<br>
+// > >kkk Salary:15000<br>
+// > >kkk Tax Amount(9%):1350<br>
+
+// >#### 3.Protected Access Specifier:
+// >- The protected access specifier hides its member variables and functions from other classes and objects. This type of variable or function can only be accessed in child class. It becomes very important while implementing inheritance.
+// >
+// >**Example:**
+
+// >C# Code:
+
+// >A C# Code to demonstrate Protected access specifier.
+
+// >```
+using System;
+namespace Protected_Specifier
+{
+    class Access
+    {
+        // String Variable declared as protected
+        protected string name;
+        public void print()
+        {
+            Console.WriteLine("\nMy name is " + name);
+        }
+    }
+	‘Protected_Specifier.access.name’ is inaccessible due to its protection level.
+	This is because,the protected member can only be accessed within its child class. 
+ 
+/*    class Program 
+    {
+        static void Main(string[] args)
+        {
+            Access ac = new Access();
+            Console.Write("Enter your name:\t");
+            // raise error because of its protection level
+            ac.name = Console.ReadLine();
+            ac.print();
+            Console.ReadLine();
+        }
+    }
+*/
+ class Program : Access // Inherit access class
+    {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            Console.Write("Enter your name:\t");
+            p.name = Console.ReadLine(); // No Error!!
+            p.print();
+            Console.ReadLine();
+        }
+    }
+}
+
+// >// >```
+// >// >**Output:**
+// >// > >Enter your name:        kkk <br>
+// >// > ><br>
+// >// > >My name is kkk<br>
+
+// >// >#### 4.Internal Access Specifier:
+// >// >- The internal access specifier hides its member variables and methods from other classes and objects, that is resides in other namespace.
+// >// >- The variable or classes that are declared with internal can be access by any member within application.
+// >// >- It is the default access specifiers for a class in C# programming.
+
+// >// >**Example:**
+
+// >// >C# Code:
+
+// >// >A C# Code to demonstrate Internal access specifier.
+
+// >// >```
+using System;
+namespace InternalAccessSpecifier
+{
+    class Access
+    {
+        // String Variable declared as internal
+        internal string name;
+        public void print()
+        {
+            Console.WriteLine("\nMy name is " + name);
+        }
+    }
+ 
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Access ac = new Access();
+            Console.Write("Enter your name:\t");
+            // Accepting value in internal variable
+            ac.name = Console.ReadLine();
+            ac.print();
+            Console.ReadLine();
+        }
+    }
+}
+
+// >```
+// >**Output:**
+
+// > >Enter your name:        sss <br>
+// > ><br>
+// > >My name is sss<br>
+
+// >####5.Protected Internal Access Specifier:
+
+// >- The protected internal access specifier allows its members to be accessed in derived class, containing class or classes within same application. However, this access specifier rarely used in C# programming but it becomes important while implementing inheritance.
+
+// >**Example:**
+
+// >C# Code:
+
+
+// >A C# Code to demonstrate Protected Internal Access Specifier .
+
+// >```
+using System;
+namespace ProtectedInternal
+{
+    class Access
+    {
+        // String Variable declared as protected internal
+        protected internal string name;
+        public void print()
+        {
+            Console.WriteLine("\nMy name is " + name);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Access ac = new Access();
+            Console.Write("Enter your name:\t");
+            // Accepting value in protected internal variable
+            ac.name = Console.ReadLine();
+            ac.print();
+            Console.ReadLine();
+        }
+    }
+}
+// >```
+// > **Output:**
+
+// > >Enter your name:        ccc <br>
+// > ><br>
+// > >My name is ccc<br>
