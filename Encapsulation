@@ -285,3 +285,15 @@ namespace ProtectedInternal
 // > >Enter your name:        ccc <br>
 // > ><br>
 // > >My name is ccc<br>
+// >
+
+// >####Access Specifier Table:
+
+// > |Access Spicifier| Within class|Derived Class|Outside Class| Within Assembly|
+// > |-------------|--------------|---------------|--------------------|----------|
+// > |Public| Yes| Yes| Yes| Yes|
+// > |Private|	Yes|No|	No|	No|
+// > |Protected|	Yes|Yes|No|	No|
+// > |Internal|	Yes|No|	No|	Yes|
+// > |Protected Internal	|Yes|Yes|	No|	Yes|
+// >
