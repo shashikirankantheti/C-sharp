@@ -1,0 +1,82 @@
+// >---
+// >title: Abstract Class in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Abstract Classes. '
+// >    keywords: 'Object Oriented Programming Modules in C#,Object Oriented Programming,Abstract Class in C#,Abstract Class'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Abstract Class in C#.md
+
+
+// >####Abstract Class:
+// >- Abstract classes are closely related to interfaces. They are classes that cannot be instantiated, and are frequently either partially implemented, or not at all implemented.
+// >-  Difference between abstract classes and interfaces is that a class may implement an unlimited number of interfaces, but may inherit from only one abstract (or any other kind of) class.
+// >-  A class that is derived from an abstract class may still implement interfaces. 
+// >- Abstract classes are useful when creating components because they allow you specify an invariant level of functionality in some methods, but leave the implementation of other methods until a specific implementation of that class is needed.
+// >- An abstract class is denoted in C# with the abstract modifier. Any methods that are meant to be invariant may be coded into the base class, but any methods that are to be implemented are marked in Visual Basic with the MustOverride modifier. In C#, the methods are marked abstract.
+// >				(or)
+// >- Abstract classes are one of the essential behaviors provided by .NET. Commonly, you would like to make classes that only represent base classes, and don’t want anyone to create objects of these class types.
+// >- You can make use of abstract classes to implement such functionality in C# using the modifier 'abstract'.
+// >- An abstract class means that, no object of this class can be instantiated, but can make derivations of this.
+// >- An abstract class can contain either abstract methods or non abstract methods. Abstract members do not have any implementation in the abstract class, but the same has to be provided in its derived class.
+// >- An abstract class does not mean that it should contain abstract members. Even we can have an abstract class only with non abstract members.
+
+// >**Important rules applied to abstract classes:** <br>
+// >-  An abstract class cannot be a sealed class. 
+// >-  Declaration of abstract methods are only allowed in abstract classes.
+// >- An abstract method cannot be private.
+// >- The access modifier of the abstract method should be same in both the abstract class and its derived class. If you declare an abstract method as protected, it should be protected in its derived class. Otherwise, the compiler will raise an error.
+// >- An abstract method cannot have the modifier virtual. Because an abstract method is implicitly virtual.
+
+// >**Example:**
+
+// >C# Code:
+
+// >A C# program to demonstrate Abstratction.
+
+// >```
+using System;
+namespace Demo
+{
+    class AbstractionDemo
+    {
+        abstract class Class1
+        {
+            public abstract void student();
+            public void class10()
+            {
+                Console.WriteLine("He belongs to class10 ");
+
+            }/*This is the Abstract Base Class, if I make both of its methods abstract then this class would become a pure Abstract Base Class.*/
+
+        }
+		/*Now we derive a class of 'Rama' from the class Class1.*/
+        class Rama : Class1
+        {
+		/*Here you can see we have 2 methods in the Abstract Base Class, the method Student() has no implementation; that is why it is being declared as 'abstract' while the method Class10() has its own body so it is not declared as 'abstract'.*/
+			public override void student()
+            {
+                Console.WriteLine("Rama is a student");
+            }
+            static void Main(string[] args)
+            {
+                Rama Myclass = new Rama();//Finally we created an Object 'Myclass' of class Rama, but we didn't instantiate any object of Abstract Base Class 'Class1'.
+                Rama belongs = Myclass;
+                Myclass.student();
+                Myclass.class10();
+                Console.Read();
+            }
+
+        }
+    }
+}
+// >```
+// >**Output:**
+
+// > >
+// > >Rama is a student <br>
+// > >He belongs to class10
+// > >
