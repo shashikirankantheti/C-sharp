@@ -35,3 +35,8 @@
 2.**Object Oriented Programming**<br>
  - [Encapsulation](https://github.com/shashikirankantheti/C-sharp/blob/master/Encapsulation)
    
+   
+   
+   
+   - [Abstract class]()
+   - [Interfaces]()
