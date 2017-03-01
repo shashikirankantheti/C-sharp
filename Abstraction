@@ -1,0 +1,19 @@
+// >---
+// >title: Abstraction in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Arrays is that stores a fixed-size sequential collection of elements of the same type. '
+// >    keywords: 'Object Oriented Programming Modules in C#,Object Oriented Programming,Abstraction in C#,Abstraction'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Abstraction in C#.md
+
+
+// >###Abstraction:
+
+// >- An abstraction is a type that describes a contract but does not provide a full implementation of the contract.
+// >- Abstractions are usually implemented as abstract classes or interfaces.
+// >- Some of the most important abstractions in the .NET Framework include Stream, IEnumerable<T>, and Object.
+// >- Abstraction is a process where you show only “relevant” data and “hide” unnecessary details of an object from the user.
