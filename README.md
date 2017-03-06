@@ -38,5 +38,5 @@
 - [Polymorphism](https://github.com/shashikirankantheti/C-sharp/blob/master/Polymorphism) 
    
    
- - [Abstract class](https://github.com/shashikirankantheti/C-sharp/blob/master/Abstract%20Class)
- - [Interfaces](https://github.com/shashikirankantheti/C-sharp/blob/master/Interfaces)
+- [Abstract class](https://github.com/shashikirankantheti/C-sharp/blob/master/Abstract%20Class)
+- [Interfaces](https://github.com/shashikirankantheti/C-sharp/blob/master/Interfaces)
