@@ -35,7 +35,7 @@
 2.**Object Oriented Programming**<br>
  - [Encapsulation](https://github.com/shashikirankantheti/C-sharp/blob/master/Encapsulation)
  - [Abstraction](https://github.com/shashikirankantheti/C-sharp/blob/master/Abstraction)
-   
+ - [Polymorphism]() 
    
    
  - [Abstract class](https://github.com/shashikirankantheti/C-sharp/blob/master/Abstract%20Class)
