@@ -1,0 +1,351 @@
+// >---
+// >title: Inheritance in C#
+// >taxonomy:
+// >    category: docs
+// >metadata:
+// >    description: 'Inheritance in C# '
+// >    keywords: 'Object Oriented Programming Modules in C#,Object Oriented Programming,Inheritance in C#,Inheritance'
+// >---
+// >|[fa icon=fa-user /]     | Shashi Kiran.Kantheti / tinitiate.com  |
+// >|-------------------------------------------------------------|
+// >|[fa icon=file-code-o /] | 01_Inheritance in C#.md
+
+
+// >###Inheritance:
+// >- Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse the code functionality and speeds up implementation time.
+// >- When creating a class, instead of writing completely new data members and member functions, the programmer can designate that the new class should inherit the members of an existing class.
+// >- This existing class is called the base class, and the new class is referred to as the derived class.
+// >- The idea of inheritance implements the IS-A relationship. For example, mammal IS A animal, dog IS-A mammal hence dog IS-A animal as well, and so on.
+// >- Here child class will get all the features of the base class,main purpose of inherutance is code reusability, providing providing enhancements to the exixting class(or)Adding editional features to exisiting class.
+
+// >** Base and Derived Classes: **
+// >- A class can be derived from more than one class or interface, which means that it can inherit data and functions from multiple base classes or interfaces.
+
+// >- The syntax used in C# for creating derived classes is as follows:
+// >>
+><acess-specifier> class <base_class> <br>
+>{ <br>
+>   ... <br>
+>} <br>
+>class  < derived_class > : < base_class >  <br>
+>{ <br>
+>   ... <br>
+>} <br>
+// >>
+
+// >#####Types of Inheritance:
+// > 1.Single Inheritance
+// > 2.MultiLevel Inheritance
+// > 3.Multiple Inheritance
+// > 4.Hierarchical Inheritance
+// > 5.Hybrid Inheritance
+ 
+ 
+// >#### 1.Single Inheritance: 
+// >- Creating a new class from single base class is know as single inheritance.
+// >-  Base class ------> Derived class.
+
+// >**Example:**
+
+// >C# Code:
+
+// >A C# code to perform single inheritance:
+// >
+// >```
+using System;
+namespace SingleInheritance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Teacher d = new Teacher();
+            d.Teach();
+            Student s = new Student();
+            s.Learn();
+            s.Teach();
+            Console.ReadKey();
+        }
+        class Teacher
+        {
+            public void Teach()
+            {
+                Console.WriteLine("Teacher teach");
+            }
+        }
+        class Student : Teacher
+        {
+            public void Learn()
+            {
+                Console.WriteLine("student Learns");
+            }
+        }
+    }
+}
+// >```
+// >**Output:**
+// >>
+// >>Teacher teach <br>
+// >>student Learns <br>
+// >>Teacher teach <br>
+// >>
+
+// >####2.MultiLevel Inheritance:
+// >- when a derived class is created from another derived class, then that inheritance is called as multi level inheritance.
+
+// ><center>(or) </center>
+
+// >- Creating a new class from alredy derives class is known as Multilevel inheritance.
+
+// >**Example:**
+
+// >C# Code:
+
+// >A C# program to demontrate MultiLevel Inheritance.
+
+// >```
+using System;
+namespace MultilevelInheritance
+{
+    class A
+    {
+        public void show()
+        {
+            Console.WriteLine("Welcome to the world of c#");
+        }
+    }
+    class B : A //class B is derived by class A
+    {
+        public void display()
+        {
+            Console.WriteLine("Hello");
+        }
+    }
+    class C : B //class C is derived by class B
+    {
+        public void show1()
+        {
+            Console.WriteLine("How are You ?");
+        }
+        class multilevel
+        {
+            public static void Main()
+            {
+                C obj = new C();
+                obj.show();               // super class member function
+                obj.display();                 // base class member function
+                obj.show1();                 // own member function
+                Console.Read();
+            }
+        }
+    }
+}
+// >```
+// >**Output:**
+// >>
+// >>Welcome to the world of c# <br>
+// >>Hello <br>
+// >>How are You ? <br>
+// >>
+
+// >#### 3.Multiple Inheritance:
+// >- Creating a new class from one (or) more base class is known as Multiple inheritance.
+// >- C# doesn’t allow multiple inheritance with classes but it can be implemented using interface.
+// >- The reason behind is:
+
+// >	1.Multiple inheritance add too much complexity with little benefit.
+	
+// >	2.There are huge chances of conflicting base class member. For example, if there is a method calculate() in two base class and both are doing different calculation. What happened if user call calculate() in child class? Which method will work?
+	
+// >	3.Inheritance with Interface provides same job of multiple inheritance.
+	
+// >	4.Multiple Inheritance inject a lots of burden into implementation and it cause slow program execution.
+
+// >** Inheritance with Interface **
+
+// >** Example: **
+
+// >C# Code:
+
+// >A C# program to demonstrate Multiple inheritance using interfaces.
+
+// >```
+using System;
+namespace MultipleInheritance
+{
+    class Shape
+    {
+        public void setSide(int s)
+        {
+            side = 6;
+        }
+        protected int side;
+    }
+    // Base class Cost
+    public interface Cost
+    {
+        int getCost(int area);
+    }
+    // Derived class
+    class square : Shape, Cost
+    {
+        public int getArea()
+        {
+            return (side * side);
+        }
+        public int getCost(int area)
+        {
+            return area * 10;
+        }
+    }
+    class Square
+    {
+        static void Main(string[] args)
+        {
+            square sq = new square();
+            int area;
+            sq.setSide(6);
+            area = sq.getArea();
+
+            // Print the area of the object.
+            Console.WriteLine("The area is: {0}", sq.getArea());
+            Console.WriteLine("The cost is: {0}", sq.getCost(area));
+            Console.Read();
+        }
+    }
+}
+// >```
+// >**Output:**
+// >>
+// >>The area is: 36 <br>
+// >>The cost is: 360 <br>
+// >>
+
+// >#### 4.Hierarchical Inheritance:
+// >- Creating two (or) more classes from one base class is known as hierarchical inheritance.
+
+// ><center> (or) </center>
+
+// >- Here Single parent and multiple child and when more than one derived class are created from single base class is called C# Hierarchical Inheritance.
+
+// >** Example: **
+
+// >C# Code:
+
+// >A C# program to demonstrate Hierarchical Inheritance.
+
+// >```
+using System;
+namespace HierarchicalInheritance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Principal g = new Principal();
+            g.Monitor();
+            Teacher d = new Teacher();
+            d.Monitor();
+            d.Teach();
+            Student s = new Student();
+            s.Monitor();
+            s.Learn();
+            Console.Read();
+        }
+        class Principal
+        {
+            public void Monitor()
+            {
+                Console.WriteLine("Monitor");
+            }
+        }
+        class Teacher : Principal
+        {
+            public void Teach()
+            {
+                Console.WriteLine("Teach");
+            }
+        }
+        class Student : Principal
+        {
+            public void Learn()
+            {
+                Console.WriteLine("Learn");
+            }
+        }
+    }
+}
+// >```
+// >**Output:**
+// >>
+// >>Monitor <br>
+// >>Monitor <br>
+// >>Teach <br>
+// >>Monitor <br>
+// >>Learn <br>
+// >>
+
+// >####5.Hybrid Inheritance:
+
+// >- This is combination of more than one inheritance. Hence, it may be a combination of Multilevel and Multiple inheritance or Hierarchical and Multilevel inheritance or Hierarchical and Multilevel inheritance or Hierarchical, Multilevel and Multiple inheritance.
+
+// >- Since .NET Languages like C#, F# etc. does not support multipleinheritance. Hence hybrid inheritance with a combination of multiple inheritance is not supported by .NET Languages.
+
+// >**Example:**
+// >```
+//Base Class
+class A
+{
+ public void fooA()
+ {
+ //TO DO:
+ }
+}
+ 
+//Base Class
+class F
+{
+ public void fooF()
+ {
+ //TO DO:
+ }
+}
+ 
+//Derived Class
+class B : A, F
+{
+ public void fooB()
+ {
+ //TO DO:
+ }
+}
+ 
+//Derived Class
+class C : A
+{
+ public void fooC()
+ {
+ //TO DO:
+ }
+}
+ 
+//Derived Class
+class D : C
+{
+ public void fooD()
+ {
+ //TO DO:
+ }
+}
+ 
+//Derived Class
+class E : C
+{
+ public void fooE()
+ {
+ //TO DO:
+ }
+}
+// >```
+
+
