@@ -36,6 +36,7 @@
 - [Encapsulation](https://github.com/shashikirankantheti/C-sharp/blob/master/Encapsulation)
 - [Abstraction](https://github.com/shashikirankantheti/C-sharp/blob/master/Abstraction)
 - [Polymorphism](https://github.com/shashikirankantheti/C-sharp/blob/master/Polymorphism) 
+- [Inheritance](https://github.com/shashikirankantheti/C-sharp/blob/master/Inheritance)
    
    
 - [Abstract class](https://github.com/shashikirankantheti/C-sharp/blob/master/Abstract%20Class)
